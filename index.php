@@ -32,14 +32,14 @@
 		<div class="row ">
 			<div class="col">
 				<a href="index.php">
-					<img src="assets\images\Homeimg.jpg" class=" rounded" alt="">
+					<img src="assets/images/Homeimg.jpg" class=" rounded" alt="">
 				<p>Home</p>
 				</a>
 			</div>
 
 			<div class="col">
-				<a href="\pages\Clubs.php">
-					<img src="assets\images\clubsimg.jpg" class=" rounded" alt="">
+				<a href="pages/Clubs.php">
+					<img src="assets/images/clubsimg.jpg" class=" rounded" alt="">
 				<p>Clubs</p>
 				</a>
 			</div>
@@ -47,15 +47,15 @@
 			
 		<div class="row">
 			<div class="col">
-				<a href="pages\Tournament.php">
-					<img src="assets\images\tours.avif" class=" rounded" alt="">
+				<a href="pages/Tournament.php">
+					<img src="assets/images/tours.avif" class=" rounded" alt="">
 			          <p>Tournaments</p>
 				</a>
 			</div>
 
 			<div class="col">
-				<a href="\pages\About-us.php">
-					<img src="assets\images\IMG-20240912-WA0201.jpg" class=" rounded"  alt="">
+				<a href="pages/About-us.php">
+					<img src="assets/images/IMG-20240912-WA0201.jpg" class=" rounded"  alt="">
 					 <p>About us</P>
 				</a>
 			</div>
@@ -65,7 +65,7 @@
 	<!--main content end-->
 	<footer class="footer text-center text-lg-start text-white"
 	style="background-color: #929fba">
-            <?php include('includes/footer.phpp'); ?>
+            <?php include('includes/footer.php'); ?>
     </footer>
 </body>
 </html>
