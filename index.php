@@ -18,7 +18,7 @@
 <body class="bg-dark-subtle">
 	
     <header class="header">
-        	<?php include('includes\nav.php'); ?>
+        	<?php include('includes/nav.php'); ?>
     </header>
 	<!--main content-->
 	
@@ -65,7 +65,7 @@
 	<!--main content end-->
 	<footer class="footer text-center text-lg-start text-white"
 	style="background-color: #929fba">
-            <?php include('includes\footer.phpp'); ?>
+            <?php include('includes/footer.phpp'); ?>
     </footer>
 </body>
 </html>
