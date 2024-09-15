@@ -3,25 +3,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+<link href="css\customStyleSheet.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="doubletaptogo.min.js" type="text/javascript"></script>
-<link href="css\customStyleSheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 		<title>WELCOME </title> 
 		
 </head>
 
-<body>
+<body class="bg-dark-subtle">
 	
     <header class="header">
-        	<?php include('includes\nav.html'); ?>
+        	<?php include('includes\nav.php'); ?>
     </header>
 	<!--main content-->
 	
-	<div class="container">
+	<div class="container ">
          <div>
 			<p class="h1 text-center ">Welcome</p>
 			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, architecto doloribus aliquam porro veritatis dolore voluptas quis! Libero, a possimus! Eos repudiandae illo voluptate, rerum sunt dolor dolores animi quibusdam?</p>
@@ -62,8 +63,9 @@
     </div>
 
 	<!--main content end-->
-	<footer class="footer">
-            <?php include('includes\footer.html'); ?>
+	<footer class="footer text-center text-lg-start text-white"
+	style="background-color: #929fba">
+            <?php include('includes\footer.php'); ?>
     </footer>
 </body>
 </html>

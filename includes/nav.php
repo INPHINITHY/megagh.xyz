@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar"style="justify-content:center">
   <div>
      <ul>
       <li><a href="index.php">Home</a></li>
