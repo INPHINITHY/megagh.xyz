@@ -18,7 +18,7 @@
 <body class="bg-dark-subtle">
 	
     <header class="header">
-        	<?php include('includes\nav.php'); ?>
+        	<?php include('\includes\nav.php'); ?>
     </header>
 	<!--main content-->
 	
@@ -38,7 +38,7 @@
 			</div>
 
 			<div class="col">
-				<a href="pages\Clubs.php">
+				<a href="\pages\Clubs.php">
 					<img src="assets\images\clubsimg.jpg" class=" rounded" alt="">
 				<p>Clubs</p>
 				</a>
@@ -54,7 +54,7 @@
 			</div>
 
 			<div class="col">
-				<a href="pages\About us.php">
+				<a href="\pages\About-us.php">
 					<img src="assets\images\IMG-20240912-WA0201.jpg" class=" rounded"  alt="">
 					 <p>About us</P>
 				</a>
@@ -65,7 +65,7 @@
 	<!--main content end-->
 	<footer class="footer text-center text-lg-start text-white"
 	style="background-color: #929fba">
-            <?php include('includes\footer.php'); ?>
+            <?php include('\includes\footer.phpp'); ?>
     </footer>
 </body>
 </html>
