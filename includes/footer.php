@@ -1,12 +1,12 @@
 
     <!-- Grid container -->
-    <div class="pb-2">
+    <div class= "container" style="padding-bottom: 10px;">
       <!-- Section: Links -->
         <!--Grid row-->
-        <div class="row">
+        <div class="grid-two-columns">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h3 class="text-uppercase mb-4 font-weight-bold">
+          <div>
+            <h3>
              Mobile Esports Gming Assocciation
             </h3>
             <p>
@@ -15,7 +15,7 @@
           </div>
 
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <div>
             <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Follow us</h3>
 
             <!-- Twitter -->

@@ -5,9 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css\customStyleSheet.css" rel="stylesheet" type="text/css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="doubletaptogo.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -15,8 +14,7 @@
 		
 </head>
 
-<body class="bg-dark-subtle">
-	
+<body>
     <header class="header">
         	<?php include('includes/nav.php'); ?>
     </header>
@@ -24,38 +22,38 @@
 	
 	<div class="container ">
          <div>
-			<p class="h1 text-center ">Welcome</p>
-			<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, architecto doloribus aliquam porro veritatis dolore voluptas quis! Libero, a possimus! Eos repudiandae illo voluptate, rerum sunt dolor dolores animi quibusdam?</p>
+			<h1 class="center">Welcome</h1>
+			<p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, architecto doloribus aliquam porro veritatis dolore voluptas quis! Libero, a possimus! Eos repudiandae illo voluptate, rerum sunt dolor dolores animi quibusdam?</p>
 		 </div>
     </div> 
-	<div class="container text-center imglinks">
-		<div class="row ">
-			<div class="col">
+	<div class="container center">
+		<div class="grid-two-columns">
+			<div class=" imglinks">
 				<a href="index.php">
-					<img src="assets/images/Homeimg.jpg" class=" rounded" alt="">
+					<img src="assets/images/Homeimg.jpg" alt="">
 				<p>Home</p>
 				</a>
 			</div>
 
-			<div class="col">
+			<div class=" imglinks">
 				<a href="pages/Clubs.php">
-					<img src="assets/images/clubsimg.jpg" class=" rounded" alt="">
+					<img src="assets/images/clubsimg.jpg" alt="">
 				<p>Clubs</p>
 				</a>
 			</div>
         </div>
 			
-		<div class="row">
-			<div class="col">
+		<div class="grid-two-columns">
+			<div class=" imglinks">
 				<a href="pages/Tournament.php">
-					<img src="assets/images/tours.avif" class=" rounded" alt="">
+					<img src="assets/images/tours.avif" alt="">
 			          <p>Tournaments</p>
 				</a>
 			</div>
 
-			<div class="col">
+			<div class=" imglinks">
 				<a href="pages/About-us.php">
-					<img src="assets/images/IMG-20240912-WA0201.jpg" class=" rounded"  alt="">
+					<img src="assets/images/IMG-20240912-WA0201.jpg"  alt="">
 					 <p>About us</P>
 				</a>
 			</div>
@@ -63,8 +61,7 @@
     </div>
 
 	<!--main content end-->
-	<footer class="footer text-center text-lg-start text-white"
-	style="background-color: #929fba">
+	<footer class="footer center" style="background-color: #929fba">
             <?php include('includes/footer.php'); ?>
     </footer>
 </body>
