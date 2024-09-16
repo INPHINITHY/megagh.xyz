@@ -166,6 +166,12 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	padding-bottom:20px;
 }
 
+.content img{
+	width: 100%;
+
+}
+
+
 .grid-two-thirds-one-third{
 	display:-ms-grid;
 	display:grid;
