@@ -281,13 +281,14 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	
 	#nav:not( :target ) > a:first-of-type,
 	#nav:target > a:last-of-type{
-		display: block;
+		display: flex;
 		width:100%;
 		text-align:center;
 		color:#000;
 		font-size:20px;
 		padding:5px 0px;
 		text-decoration:none;
+		justify-content: space-between;
 	}
 	
 	#nav a{
@@ -317,6 +318,7 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	}
 
     /* second level */
+	
  
     #nav li ul{
         position: static;
@@ -409,7 +411,6 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	border-radius: 10px;
 	width: 100%;
 	height: 20em;
-	width: 30em; 
 	object-fit: cover;
 	filter: blur(2px);
 }
@@ -498,7 +499,15 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
   .socials img:hover{
 	opacity: 0.5;
   }
-  
+
+  .blurred-background {
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.3); /* Optional background color with transparency */
+	padding: 20px;
+	border-radius: 10px;
+  }
+
+
   /*Theme*/
   /*.light-theme {
 	background-color: var(--light-background);
