@@ -20,7 +20,7 @@
         	<?php include('includes/nav.php'); ?>
     </header>
 	<!--main content-->
-	<div class="container m-0">
+	<div class="container" style="padding:0;">
 	    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 				<?php include('includes/slideshow.php'); ?>
 		</div>

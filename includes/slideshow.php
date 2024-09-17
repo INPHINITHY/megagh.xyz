@@ -15,7 +15,7 @@
     </div>
     <div class="carousel-item" data-bs-interval="2000">
        <img src="assets/images/slideshow/clubsimg.jpg" class="d-block w-100 image-fluid" alt="Image 2">
-       <div class=" blurred-background carousel-caption d-none d-md-block">
+       <div class="blurred-background carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
@@ -44,12 +44,4 @@
       </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>

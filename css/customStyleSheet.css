@@ -43,7 +43,6 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	z-index:10;
 	position:relative;
 	font-size:16px;
-	margin-bottom:15px;
 	background-color: darkgrey;
 }
 
@@ -501,7 +500,7 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
   }
 
   .blurred-background {
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(2px);
 	background-color: rgba(255, 255, 255, 0.3); /* Optional background color with transparency */
 	padding: 20px;
 	border-radius: 10px;
