@@ -224,7 +224,7 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 .footer{
 	background-color: rgb(134, 133, 131);
 	width: 100%;
-	position:relative;
+	position:absolute;
 	float:left;
 }
 
@@ -253,6 +253,10 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 }
 
 @media only screen and (max-width:1200px){
+	.slideshow-img{
+		width: 100%;
+		height: 50em;
+	  }
 
 	
 }
@@ -332,6 +336,7 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	}
 	/*End Navigation*/
 	
+	
 	.grid-two-thirds-one-third{
 		-ms-grid-columns:1fr;
 		grid-template-columns:1fr;
@@ -382,6 +387,10 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 		padding:0px 0px 0px 0px;
 		display:block;
 	}
+	.slideshow-img{
+		width: 100%;
+		height: 20em;
+	  }
 	
 }
 
@@ -505,7 +514,7 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	padding: 20px;
 	border-radius: 10px;
   }
-
+ 
 
   /*Theme*/
   /*.light-theme {
