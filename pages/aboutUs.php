@@ -10,108 +10,108 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="css\customStyleSheet.css" rel="stylesheet" type="text/css" />
+<link href=".\..\css\customStyleSheet.css" rel="stylesheet" type="text/css" />
 <title>About Us</title>
 </head>
 
 <body >		
 	<header class="header">
-		<?php include('includes/nav.php'); ?>
-</header>
+		<?php include(__DIR__. '/../includes/nav.php'); ?>
+    </header>
 	
 	<div class="content">
 		<h1 >
 	     <a href=" https://docs.google.com/document/d/1-E9FfBKH6u808-VIWUthSK5zShwon9xe/edit?usp=drivesdk&rtpof=true&sd=true ">MOBILE ESPORTS GAMING ASSOCIATION</a>
 	    </h1>
 	
-	<div>
-		<h2>MISSION :</h2>
-		<p>MEGA's mission is to promote and support the efootball gaming community through competitions, advocacy, and social engagement as we strive to create a safe and inclusive space for efootball gamers of all backgrounds, skills and abilities, and to foster a culture of respect, sportsmanship, and creativity.
-	    </p>
-	</div>
+		<div>
+			<h2>MISSION :</h2>
+				<p>MEGA's mission is to promote and support the efootball gaming community through competitions, advocacy, and social engagement as we strive to create a safe and inclusive space for efootball gamers of all backgrounds, skills and abilities, and to foster a culture of respect, sportsmanship, and creativity.
+				</p>
+	    </div>
 		
-	<div>
-	<h1>VISION:</h1>
-	    <p>MEGA envisions becoming a leading association dedicated to promoting excellence, integrity, and inclusivity in eFootball™ gaming on a national and international level. We aim to create a vibrant and supportive community where eFootball™ gamers of all skill levels can connect, learn, and thrive. MEGA seeks to establish itself as a trusted authority in eFootball™ gaming, organize prestigious tournaments and events, cultivate a culture of sportsmanship and fair play, contribute to the development and growth of eFootball™ gaming, and empower eFootball™ gamers to reach their full potential</p>
-	   </div>
+		<div>
+			<h1>VISION:</h1>
+				<p>MEGA envisions becoming a leading association dedicated to promoting excellence, integrity, and inclusivity in eFootball™ gaming on a national and international level. We aim to create a vibrant and supportive community where eFootball™ gamers of all skill levels can connect, learn, and thrive. MEGA seeks to establish itself as a trusted authority in eFootball™ gaming, organize prestigious tournaments and events, cultivate a culture of sportsmanship and fair play, contribute to the development and growth of eFootball™ gaming, and empower eFootball™ gamers to reach their full potential</p>
+		</div>
 
 	
 	
-	<div>
-		<h2>GOVERNANCE STRUCTURE:</h2>
-		<p>
-			<ol style>
-				<li>BOARD OF DIRECTORD/COMMITEE </li>
-				<LI>CLAN LEADER</LI>
-				<li>TEAM CAPTIANS</li>
-				<li>SUPPORT STAFF</li>
-				<li>PLAYERS</li>
-			</ol>
-		</p>
-	</div>
+		<div>
+			<h2>GOVERNANCE STRUCTURE:</h2>
+			<p>
+				<ol style>
+					<li>BOARD OF DIRECTORD/COMMITEE </li>
+					<LI>CLAN LEADER</LI>
+					<li>TEAM CAPTIANS</li>
+					<li>SUPPORT STAFF</li>
+					<li>PLAYERS</li>
+				</ol>
+			</p>
+		</div>
 	
-	<div class="content" style="margin-top: 20px;">
-		<h2>BOARD OF DIRECTORS</h2>
-		 <section class="board">
-			<h3>PRESIDENT</a></h3>
-			<img src="#" alt="William">
-				<p>William</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus magni architecto maxime voluptate amet unde doloremque! Asperiores aspernatur, repellat necessitatibus soluta quae praesentium eos, deserunt perspiciatis, odio minus sit!</p>
-			<ul>
-				<li><a href="https://wa.me/+233550612290"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
-			</ul>
-		</section>
+		<div class="content" style="margin-top: 20px;">
+			<h2>BOARD OF DIRECTORS</h2>
+			<section class="board">
+				<h3>PRESIDENT</a></h3>
+				<img src="#" alt="William">
+					<p>William</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus magni architecto maxime voluptate amet unde doloremque! Asperiores aspernatur, repellat necessitatibus soluta quae praesentium eos, deserunt perspiciatis, odio minus sit!</p>
+				<ul>
+					<li><a href="https://wa.me/+233550612290"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
+				</ul>
+			</section>
 
-        <section class="board">
-			<h3>VICE PESIDENT</h3>
-			<img src="#" alt="MCcARHTY">
-				<p>MCcARHTY</p>
+			<section class="board">
+				<h3>VICE PESIDENT</h3>
+				<img src="#" alt="MCcARHTY">
+					<p>MCcARHTY</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
+				<ul>
+					<li><a href="https://wa.me/+233544084509"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
+				</ul>	
+			</section>	
+			
+			<section class="board">
+				<h3>TREASURER</h3>
+				<img src="#" alt="RED_DY">
+				<p>RED_DY</p>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
 			<ul>
-				<li><a href="https://wa.me/+233544084509"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
+				<li><a href="http://wa.me/+233553908441"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
 			</ul>	
-		</section>	
-        
-		<section class="board">
-			<h3>TREASURER</h3>
-			<img src="#" alt="RED_DY">
-			   <p>RED_DY</p>
-			   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
-		   <ul>
-			   <li><a href="http://wa.me/+233553908441"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
-		   </ul>	
-		</section>
+			</section>
 
-		<section class="board">
-		   <h3>EVENT MANAGER</h3>
-		   <img src="photo_2023-11-17_15-13-40.jpg" alt="Aizen">
-			  <p>Aizen</p>
-			  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
-		  <ul>
-			  <li><a href="http://wa.me/+233532598590" ><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
-		  </ul>	
-		</section>
+			<section class="board">
+			<h3>EVENT MANAGER</h3>
+			<img src="photo_2023-11-17_15-13-40.jpg" alt="Aizen">
+				<p>Aizen</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
+			<ul>
+				<li><a href="http://wa.me/+233532598590" ><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
+			</ul>	
+			</section>
 
-		<section class="board">
-		  <h3>COMMUNITY ENGAGEMENT OFFICER</h3>
-		  <img src="photo_2023-11-17_15-13-40.jpg" alt="DEMONGOD">
-			 <p>DEMONGOD</p>
-			 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
-		 <ul>
-			 <li><a href="http://wa.me/+233201962644"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
-		 </ul>	
-        </section>
+			<section class="board">
+			<h3>COMMUNITY ENGAGEMENT OFFICER</h3>
+			<img src="photo_2023-11-17_15-13-40.jpg" alt="DEMONGOD">
+				<p>DEMONGOD</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
+			<ul>
+				<li><a href="http://wa.me/+233201962644"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
+			</ul>	
+			</section>
 
-		<section class="board">
-		 <h3>Tech Support</h3>
-		 <img src="photo_2023-11-17_15-13-40.jpg" alt="Inphinithy">
-			<p>Inphinithy</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
-		<ul>
-			<li><a href="https://wa.me/+13096314966"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
-		</ul>	
-		</section>
-	</div>  
+			<section class="board">
+			<h3>Tech Support</h3>
+			<img src="photo_2023-11-17_15-13-40.jpg" alt="Inphinithy">
+				<p>Inphinithy</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
+			<ul>
+				<li><a href="https://wa.me/+13096314966"><img src="images/whatsapp.png" alt="whatsapp icon" style="max-width: 50px;"></a></li>
+			</ul>	
+			</section>
+		</div>  
         <h2><u>CODE OF CONDUCT</u></h2>
 		<P>Purpose: <br>
 			MEGA is committed to creating a positive and respectful environment for all members. This policy outlines the expected behavior and standards of conduct for all participants.
@@ -150,9 +150,9 @@
 			<li>Grievance and Appeals Process:<br> A formal process is in place for members to submit complaints or grievances, which will be reviewed and resolved by a designated committee or authority.</li>
 		</ol>
 			<h2><a href="https://docs.google.com/document/d/1-I5qLUhs5aTJZHTuSlqEJBHJYgAS3oEj/edit?usp=drivesdk&ouid=100730888252227469489&rtpof=true&sd=true">MEGA POLICIES</a></h2>
-</div>
+    </div>
 </body>
 <footer class="footer">
-            <?php include('includes/footer.php'); ?>
-    </footer>
+            <?php include('./../includes/footer.php'); ?>
+</footer>
 </html>
