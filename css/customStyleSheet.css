@@ -462,16 +462,19 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 
 /*about us*/
 .board{
-	display: flow-root;/*for place images at the start of line for the deisre effect of one side*/
+	
   }
   
   .board img{
-	width: 200px;
-	float: left;
-	margin-right: 20px;
 	max-height: 600px;
 	max-width: 400px;
-	margin-top: -15px;
+	margin: auto;
+  }
+  .card{
+	margin: 20px 0px;
+	padding: 30px;
+	box-shadow: 6px 10px 7px #F3BE43;
+
   }
   .board li{
 	list-style: none;
