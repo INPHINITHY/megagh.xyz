@@ -58,7 +58,7 @@
 			</div>
 
 			<div class=" imglinks">
-				<a href="pages/About-us.php">
+				<a href="pages/aboutUs.php">
 					<img src="assets/images/IMG-20240912-WA0201.jpg"  alt="">
 					 <p>About us</P>
 				</a>

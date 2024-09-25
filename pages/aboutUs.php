@@ -19,7 +19,7 @@
 		<?php include(__DIR__. '/../includes/nav.php'); ?>
     </header>
 	
-	<div class="content">
+	<div class="container">	
 		<h1 >
 	     <a href=" https://docs.google.com/document/d/1-E9FfBKH6u808-VIWUthSK5zShwon9xe/edit?usp=drivesdk&rtpof=true&sd=true ">MOBILE ESPORTS GAMING ASSOCIATION</a>
 	    </h1>
@@ -152,7 +152,7 @@
 			<h2><a href="https://docs.google.com/document/d/1-I5qLUhs5aTJZHTuSlqEJBHJYgAS3oEj/edit?usp=drivesdk&ouid=100730888252227469489&rtpof=true&sd=true">MEGA POLICIES</a></h2>
     </div>
 </body>
-<footer class="footer">
-            <?php include('./../includes/footer.php'); ?>
+<footer class="footer center" style="background-color: #929fba">
+            <?php include(__DIR__.'/../includes/footer.php'); ?>
 </footer>
 </html>
