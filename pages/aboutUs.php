@@ -52,7 +52,7 @@
 			</p>
 		</div>
 	
-		<div class="content" style="margin-top: 20px;">
+		<div class="content" style="margin-top:20px;">
 			<h2>BOARD OF DIRECTORS</h2>
 		<div class="grid-three-columns board">
 			<div class="card">
