@@ -44,7 +44,7 @@
 			</div>
 
 			<div class=" imglinks">
-				<a href="pages/Clubs.php">
+				<a href="pages/clubs.php">
 					<img src="assets/images/clubsimg.jpg" alt="">
 				<p>Clubs</p>
 				</a>
@@ -53,7 +53,7 @@
 			
 		<div class="grid-two-columns">
 			<div class=" imglinks">
-				<a href="pages/Tournament.php">
+				<a href="pages/tournament.php">
 					<img src="assets/images/tours.avif" alt="">
 			          <p>Tournaments</p>
 				</a>
