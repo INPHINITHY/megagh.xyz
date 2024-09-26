@@ -466,14 +466,15 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
   }
   
   .board img{
-	max-height: 600px;
-	max-width: 400px;
+   width: 100%;
+   height: auto;
+   object-fit: cover;
 	margin: auto;
   }
   .card{
 	margin: 20px 0px;
 	padding: 30px;
-	box-shadow: 6px 10px 7px #F3BE43;
+	box-shadow: 6px 10px 7px whitesmoke;
 
   }
   .board li{
@@ -482,7 +483,12 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
   
   .board h3{
 	border-bottom: 3px dashed #d3d4d6;
-  
+	font-size: x-large ;
+  }
+  .board h4{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-top: 20px;
+	margin-bottom: -4px;
   }
   /*footer*/
   footer {
@@ -493,23 +499,7 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	padding: 0 20px;
   }
   
-  .socials{
-	list-style-type: none;
-	padding: 0;
-  
-  }
-  .socials li{
-	display: inline-block;
-	margin-left: 10px;
-  }
-  
-  .socials img{
-	width: 30px;
-  }
-  
-  .socials img:hover{
-	opacity: 0.5;
-  }
+
 
   .blurred-background {
 	backdrop-filter: blur(2px);

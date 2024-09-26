@@ -56,9 +56,9 @@
 			<h2>BOARD OF DIRECTORS</h2>
 		<div class="grid-three-columns board">
 			<div class="card">
-				<h3>PRESIDENT</a></h3>
+				<h3>PRESIDENT</h3>
 				<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="William">
-					<p>William</p>
+					<h4>William</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus magni architecto maxime voluptate amet unde doloremque! Asperiores aspernatur, repellat necessitatibus soluta quae praesentium eos, deserunt perspiciatis, odio minus sit!</p>
 				<ul>
 					<li><a href="https://wa.me/+233550612290"><i class="bi bi-whatsapp"></i></a></li>
@@ -68,7 +68,7 @@
 			<div class="card">
 				<h3>VICE PESIDENT</h3>
 				<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="MCcARHTY">
-					<p>MCcARHTY</p>
+					<h4>MCcARHTY</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
 				<ul>
 					<li><a href="https://wa.me/+233544084509"><i class="bi bi-whatsapp"></i></a></li>
@@ -78,7 +78,7 @@
             <div class="card">
 				<h3>TREASURER</h3>
 				<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="RED_DY">
-				<p>RED_DY</p>
+				<h4>RED_DY</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
 				<ul>
 					<li><a href="http://wa.me/+233553908441"><i class="bi bi-whatsapp"></i></a></li>
@@ -90,7 +90,7 @@
 			<div class="card">
 			<h3>EVENT MANAGER</h3>
 			<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="Aizen">
-				<p>Aizen</p>
+				<h4>Aizen</h4>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
 			<ul>
 				<li><a href="http://wa.me/+233532598590"><i class="bi bi-whatsapp"></i></a></li>
@@ -100,7 +100,7 @@
 			<div class="card">
 			<h3>COMMUNITY ENGAGEMENT OFFICER</h3>
 			<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="DEMONGOD">
-				<p>DEMONGOD</p>
+				<h4>DEMONGOD</h4>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
 			<ul>
 				<li><a href="http://wa.me/+233201962644"><i class="bi bi-whatsapp"></i></a></li>
@@ -110,7 +110,7 @@
 			<div class="card">
 			<h3>Tech Support</h3>
 			<img src="./../assets/images/inphinithy.jpg" alt="Inphinithy">
-				<p>Inphinithy</p>
+				<h4>Inphinithy</h4>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
 			<ul>
 				<li><a href="https://wa.me/+13096314966"><i class="bi bi-whatsapp"></i></a></li>
