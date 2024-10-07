@@ -14,16 +14,13 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link href="./../css-library/style.css"  rel="stylesheet" type="text/css" />
 <title>About Us</title>
-<style>
-	ul{display:flex}
-	li{margin:30px}
-</style>
 </head>
 
 <body class="resbody" >		
 	<header class="header">
 		<?php include(__DIR__. '/../includes/nav.php'); ?>
     </header>
+
 <div class="container-fl">
 		<div class="card-section">
 			<h1 class="center">MOBILE ESPORTS GAMING ASSOCIATION</h1>
@@ -41,7 +38,7 @@
 			<div>
 				<h2>PRESIDENT</h2>
 				<ul>
-				<li>
+				<li class="list-horizontal">
 					<strong>William</strong>
 					<p><strong>Club</strong>-Epanda</p>
 					<ul>
@@ -60,7 +57,7 @@
 			<div>
 				<h2>VICE PESIDENT</h2>
 				<ul>
-				<li>
+				<li class="list-horizontal">
 					<strong>MCcARHTY</strong>
 					<p><strong>Club</strong>-Epanda</p>
 					<ul>
@@ -85,7 +82,7 @@
 			<div>
 				<h2>TREASURER</h2>
 				<ul>
-				<li>
+				<li class="list-horizontal">
 					<strong>MRED_DY</strong>
 					<p><strong>Club</strong>-Immortal Souls</p>
 					<ul>
@@ -105,7 +102,7 @@
 			<div>
 				<h2>EVENT MANAGER</h2>
 				<ul>
-				<li>
+				<li class="list-horizontal">
 					<strong>Aizen</strong>
 					<p><strong>Club</strong>-LGC</p>
 					<ul>
@@ -131,7 +128,7 @@
 			<div>
 				<h2>Tech Support</h2>
 				<ul>
-				<li>
+				<li class="list-horizontal">
 					<strong>Inphinithy</strong>
 					<p><strong>Club</strong>-EGiants</p>
 					<ul>
@@ -149,12 +146,9 @@
 
 		<div class="container-lm" style="margin-top:20px">
 			<div class="card-section" style="padding:40px">
-			<h2>CODE OF CONDUCT</h2>
-			<P>Purpose: <br>
-				MEGA is committed to creating a positive and respectful environment for all members. This policy outlines the expected behavior and standards of conduct for all participants.
-				<BR>
-				Policy:<br>
+				<h2>CODE OF CONDUCT</h2>	
 				<ul style="list-style-type: square;display:block">
+					<li>Purpose: MEGA is committed to creating a positive and respectful environment for all members. This policy outlines the expected behavior and standards of conduct for all participants. </li>			
 					<li>Respect and fairness: Treat all members, officials, and participants with respect, regardless of their background or abilities.</li>
 					<li>Harassment-free environment: Avoid any form of harassment, discrimination, or bullying.</li>
 					<li>Sportsmanship and fair play: Maintain good sportsmanship and fair play in all gaming activities.</li>
@@ -162,23 +156,20 @@
 					<li>Compliance with rules: Follow the rules and guidelines established by MEGA for tournaments and events.</li>
 					<li>No cheating or hacking: Refrain from cheating, hacking, or exploiting game mechanics.</li>
 				</ul>
-			</P>
 			</div>
 		
-			<div class="card-section">
-			<h2>MEMBERSHIP STRUCTURE</h2>
-			<ul  style="list-style-type: square;display:block">
-				<li> Criteria: <br> Prospective members (clans) of MEGA must have a minimum of 10 members. Members must have the official version of the game, and have access to communication channels.</li>
-				<li>Rights and Privileges:<br> Access to community events, participation in tournaments, inclusion in clan directory, networking opportunities, leadership positions, voting rights, and enhanced visibility.</li>
-				<li>Application and Approval Process:<br> Prospective members must submit an application form, which will be reviewed and verified by MEGA. Approved applicants will be granted Associate Member status.</li>
-				<li>Termination or Suspension: <br>MEGA reserves the right to terminate or suspend membership for violations of the Code of Conduct or non-compliance with policies.</li>
-				<li>Grievance and Appeals Process:<br> A formal process is in place for members to submit complaints or grievances, which will be reviewed and resolved by a designated committee or authority.</li>
-			</ul>
+			<div class="card-section" style="padding:40px">
+				<h2>MEMBERSHIP STRUCTURE</h2>
+				<ul  style="list-style-type: square;display:block">
+					<li> Criteria: Prospective members (clans) of MEGA must have a minimum of 10 members. Members must have the official version of the game, and have access to communication channels.</li>
+					<li>Rights and Privileges: Access to community events, participation in tournaments, inclusion in clan directory, networking opportunities, leadership positions, voting rights, and enhanced visibility.</li>
+					<li>Application and Approval Process: Prospective members must submit an application form, which will be reviewed and verified by MEGA. Approved applicants will be granted Associate Member status.</li>
+					<li>Termination or Suspension: MEGA reserves the right to terminate or suspend membership for violations of the Code of Conduct or non-compliance with policies.</li>
+					<li>Grievance and Appeals Process: A formal process is in place for members to submit complaints or grievances, which will be reviewed and resolved by a designated committee or authority.</li>
+				</ul>
 			</div>
-			
-				
 		</div>
-    </div>
+</div>
 <footer class="footer center" style="background-color: #929fba">
         <?php include(__DIR__.'/../includes/footer.php'); ?>
 </footer>
