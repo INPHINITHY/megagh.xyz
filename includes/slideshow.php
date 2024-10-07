@@ -15,14 +15,14 @@
         <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="5000">
        <img src="assets/images/slideshow/MEGA _CHAMIONSHIP_1ST_RUNNER_UP.jpg" class="d-block w-100 slideshow-img" alt="Image 2">
        <div class="blurred-background carousel-caption d-none d-md-block">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="assets/images/slideshow/MEGA_PRO_LEAGUE_TOP_SCORER.jpg" class="d-block w-100 slideshow-img" alt="Image 3">
       <div class="blurred-background carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="5000">
      <img src="assets/images/slideshow/MEGA_ROLEAGUe_WINNNER_1.jpg" class="d-block w-100 slideshow-img" alt="Image 4">
       <div class="blurred-background carousel-caption d-none d-md-block">
         <h5>Fourth slide label</h5>
@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="assets/images/slideshow/MEGA_CHAMIONSHIP-third_place.jpg" class="d-block w-100 slideshow-img" alt="Image 5">
       <div class="blurred-background carousel-caption d-none d-md-block">
         <h5>Fifth slide label</h5>
@@ -46,7 +46,7 @@
       </div>
     </div>
     
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="assets/images/slideshow/MEGA_cHAMIONSHIP_CHAMPION.jpg" class="d-block w-100 slideshow-img" alt="Image 6">
       <div class="blurred-background carousel-caption d-none d-md-block">
         <h5>Sixt slide label</h5>
@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div class="carousel-item" data-bs-interval="2000">
+    <div class="carousel-item" data-bs-interval="5000">
       <img src="assets/images/slideshow/1.2.jpg" class="d-block w-100 slideshow-img" alt="Image 7">
       <div class="blurred-background carousel-caption d-none d-md-block">
         <h5>Seventh slide label</h5>

@@ -12,21 +12,21 @@
 <link rel="shortcut icon" href=".\..\favicon\favicon-16x16.png" type="image/x-icon">
 <link rel="shortcut icon" href=".\..\favicon\site.webmanifest" type="image/x-icon">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href=".\..\css\customStyleSheet.css" rel="stylesheet" type="text/css" />
+<link href="./../css-library/style.css"  rel="stylesheet" type="text/css" />
         <title>TOURNAMENTS</title>
 </head>
 
 <body >	
      <header class="header">
-                <?php include(__DIR__. '/../includes/nav.php'); ?>
+                <?php include( './../includes/nav.php'); ?>
      </header>
 
 	
 <div class="content">
 	
 </div>
-</body>
-<footer class="footer center" style="background-color: #929fba">
-            <?php include(__DIR__.'/../includes/footer.php'); ?>
+<footer class="footer" style="background-color: #929fba">
+            <?php include('./../includes/footer.php'); ?>
 </footer>
+</body>
 </html>

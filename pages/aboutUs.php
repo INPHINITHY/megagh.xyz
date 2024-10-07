@@ -12,156 +12,176 @@
 <link rel="shortcut icon" href=".\..\favicon\favicon-16x16.png" type="image/x-icon">
 <link rel="shortcut icon" href=".\..\favicon\site.webmanifest" type="image/x-icon">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href=".\..\css\customStyleSheet.css" rel="stylesheet" type="text/css" />
+<link href="./../css-library/style.css"  rel="stylesheet" type="text/css" />
 <title>About Us</title>
+<style>
+	ul{display:flex}
+	li{margin:30px}
+</style>
 </head>
 
-<body >		
+<body class="resbody" >		
 	<header class="header">
 		<?php include(__DIR__. '/../includes/nav.php'); ?>
     </header>
-	
-	<div class="container">	
-		<h1 >
-	     <a href=" https://docs.google.com/document/d/1-E9FfBKH6u808-VIWUthSK5zShwon9xe/edit?usp=drivesdk&rtpof=true&sd=true ">MOBILE ESPORTS GAMING ASSOCIATION</a>
-	    </h1>
-	
-		<div>
-			<h2>MISSION :</h2>
-				<p>MEGA's mission is to promote and support the efootball gaming community through competitions, advocacy, and social engagement as we strive to create a safe and inclusive space for efootball gamers of all backgrounds, skills and abilities, and to foster a culture of respect, sportsmanship, and creativity.
-				</p>
-	    </div>
-		
-		<div>
-			<h1>VISION:</h1>
-				<p>MEGA envisions becoming a leading association dedicated to promoting excellence, integrity, and inclusivity in eFootball™ gaming on a national and international level. We aim to create a vibrant and supportive community where eFootball™ gamers of all skill levels can connect, learn, and thrive. MEGA seeks to establish itself as a trusted authority in eFootball™ gaming, organize prestigious tournaments and events, cultivate a culture of sportsmanship and fair play, contribute to the development and growth of eFootball™ gaming, and empower eFootball™ gamers to reach their full potential</p>
+<div class="container-fl">
+		<div class="card-section">
+			<h1 class="center">MOBILE ESPORTS GAMING ASSOCIATION</h1>
+			<div class="grid-two-columns" style="place-items: center;" >
+				<div><button class="btn-grn"><a href=" https://docs.google.com/document/d/1-E9FfBKH6u808-VIWUthSK5zShwon9xe/edit?usp=drivesdk&rtpof=true&sd=true">Read About Us</a></button></div>
+				<div><button class="btn-grn"><a href="https://docs.google.com/document/d/1-I5qLUhs5aTJZHTuSlqEJBHJYgAS3oEj/edit?usp=drivesdk&ouid=100730888252227469489&rtpof=true&sd=true">MEGA POLICIES</a></button></div>
+     		</div>
 		</div>
 
-	
-	
-		<div>
-			<h2>GOVERNANCE STRUCTURE:</h2>
-			<p>
-				<ol style>
-					<li>BOARD OF DIRECTORD/COMMITEE </li>
-					<LI>CLAN LEADER</LI>
-					<li>TEAM CAPTIANS</li>
-					<li>SUPPORT STAFF</li>
-					<li>PLAYERS</li>
-				</ol>
-			</p>
-		</div>
-	
-		<div class="content" style="margin-top:20px;">
-			<h2>BOARD OF DIRECTORS</h2>
-		<div class="grid-three-columns board">
-			<div class="card">
-				<h3>PRESIDENT</h3>
-				<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="William">
-					<h4>William</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus magni architecto maxime voluptate amet unde doloremque! Asperiores aspernatur, repellat necessitatibus soluta quae praesentium eos, deserunt perspiciatis, odio minus sit!</p>
+	<div class="container-lm" style='background-color:white'>
+		<div class="grid-two-columns"  style="place-items: center;padding-top:50px">
+			<div>
+				<img class="card-img" src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="">
+			</div>
+			<div>
+				<h2>PRESIDENT</h2>
 				<ul>
-					<li><a href="https://wa.me/+233550612290"><i class="bi bi-whatsapp"></i></a></li>
+				<li>
+					<strong>William</strong>
+					<p><strong>Club</strong>-Epanda</p>
+					<ul>
+						<li><a href="mailto:" title="personal-email"><i class="bi bi-envelope-at-fill"></i></a></li>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="https://wa.me/+233550612290" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+				</li>
 				</ul>
 			</div>
+		</div>
+	</div>
 
-			<div class="card">
-				<h3>VICE PESIDENT</h3>
-				<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="MCcARHTY">
-					<h4>MCcARHTY</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
+	<div class="container-lm" style='background-color:#AA767C'>
+		<div class="grid-two-columns"  style="place-items: center;padding-top:50px">
+			<div>
+				<h2>VICE PESIDENT</h2>
 				<ul>
-					<li><a href="https://wa.me/+233544084509"><i class="bi bi-whatsapp"></i></a></li>
-				</ul>	
+				<li>
+					<strong>MCcARHTY</strong>
+					<p><strong>Club</strong>-Epanda</p>
+					<ul>
+						<li><a href="mailto:" title="personal-email"><i class="bi bi-envelope-at-fill"></i></a></li>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="https://wa.me/+233544084509" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+				</li>
+				</ul>
 			</div>
-			
-            <div class="card">
-				<h3>TREASURER</h3>
-				<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="RED_DY">
-				<h4>RED_DY</h4>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
-				<ul>
-					<li><a href="http://wa.me/+233553908441"><i class="bi bi-whatsapp"></i></a></li>
-				</ul>	
+			<div>
+				<img class="card-img" src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="">
 			</div>
 		</div>
+	</div>
 
-		<div class="grid-three-columns board">
-			<div class="card">
-			<h3>EVENT MANAGER</h3>
-			<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="Aizen">
-				<h4>Aizen</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
-			<ul>
-				<li><a href="http://wa.me/+233532598590"><i class="bi bi-whatsapp"></i></a></li>
-			</ul>	
+	<div class="container-lm" style='background-color:#08A4BD'>
+		<div class="grid-two-columns"  style="place-items: center;padding-top:50px">
+			<div>
+				<img class="card-img" src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="">
 			</div>
-
-			<div class="card">
-			<h3>COMMUNITY ENGAGEMENT OFFICER</h3>
-			<img src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="DEMONGOD">
-				<h4>DEMONGOD</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
-			<ul>
-				<li><a href="http://wa.me/+233201962644"><i class="bi bi-whatsapp"></i></a></li>
-			</ul>	
-			</div>
-
-			<div class="card">
-			<h3>Tech Support</h3>
-			<img src="./../assets/images/inphinithy.jpg" alt="Inphinithy">
-				<h4>Inphinithy</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus necessitatibus, repudiandae voluptates explicabo vitae itaque labore commodi odit tenetur, dolorem neque. Totam, quia nam aperiam molestias voluptas eveniet quasi alias.</p>
-			<ul>
-				<li><a href="https://wa.me/+13096314966"><i class="bi bi-whatsapp"></i></a></li>
-			</ul>	
+			<div>
+				<h2>TREASURER</h2>
+				<ul>
+				<li>
+					<strong>MRED_DY</strong>
+					<p><strong>Club</strong>-Immortal Souls</p>
+					<ul>
+						<li><a href="mailto:" title="personal-email"><i class="bi bi-envelope-at-fill"></i></a></li>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="https://wa.me/+233544084509" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+				</li>
+				</ul>
 			</div>
 		</div>
-		</div>  
+	</div>
 
-		<div class="container">
-			<h2><u>CODE OF CONDUCT</u></h2>
+
+	<div class="container-lm" style='background-color:#AA767C'>
+		<div class="grid-two-columns"  style="place-items: center;padding-top:50px">
+			<div>
+				<h2>EVENT MANAGER</h2>
+				<ul>
+				<li>
+					<strong>Aizen</strong>
+					<p><strong>Club</strong>-LGC</p>
+					<ul>
+						<li><a href="mailto:" title="personal-email"><i class="bi bi-envelope-at-fill"></i></a></li>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="https://wa.me/+233544084509" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+				</li>
+				</ul>
+			</div>
+			<div>
+				<img class="card-img" src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="">
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-lm" style='background-color:white'>
+		<div class="grid-two-columns"  style="place-items: center;padding-top:50px">
+			<div>
+			<img class="card-img"src="./../assets/images/inphinithy.jpg" alt="Inphinithy">
+			</div>
+			<div>
+				<h2>Tech Support</h2>
+				<ul>
+				<li>
+					<strong>Inphinithy</strong>
+					<p><strong>Club</strong>-EGiants</p>
+					<ul>
+						<li><a href="mailto:" title="personal-email"><i class="bi bi-envelope-at-fill"></i></a></li>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="https://wa.me/+13096314966" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+		<div class="container-lm" style="margin-top:20px">
+			<div class="card-section" style="padding:40px">
+			<h2>CODE OF CONDUCT</h2>
 			<P>Purpose: <br>
 				MEGA is committed to creating a positive and respectful environment for all members. This policy outlines the expected behavior and standards of conduct for all participants.
-				<br>
 				<BR>
 				Policy:<br>
-				1. Respect and fairness: Treat all members, officials, and participants with respect, regardless of their background or abilities.
-				<br>
-				<br>
-				2. Harassment-free environment: Avoid any form of harassment, discrimination, or bullying.
-				<br>
-				<br>
-				3. Sportsmanship and fair play: Maintain good sportsmanship and fair play in all gaming activities.
-				<br>
-				<br>
-				4. Intellectual property: Respect the intellectual property rights of others.
-				<br>
-				<br>
-				5. Compliance with rules: Follow the rules and guidelines established by MEGA for tournaments and events.
-				<br>
-				<br>
-				6. No cheating or hacking: Refrain from cheating, hacking, or exploiting game mechanics.
+				<ul style="list-style-type: square;display:block">
+					<li>Respect and fairness: Treat all members, officials, and participants with respect, regardless of their background or abilities.</li>
+					<li>Harassment-free environment: Avoid any form of harassment, discrimination, or bullying.</li>
+					<li>Sportsmanship and fair play: Maintain good sportsmanship and fair play in all gaming activities.</li>
+					<li> Intellectual property: Respect the intellectual property rights of others.</li>
+					<li>Compliance with rules: Follow the rules and guidelines established by MEGA for tournaments and events.</li>
+					<li>No cheating or hacking: Refrain from cheating, hacking, or exploiting game mechanics.</li>
+				</ul>
 			</P>
-
-			<h2><U>MEMBERSHIP STRUCTURE</U></h2>
-			<ol>
+			</div>
+		
+			<div class="card-section">
+			<h2>MEMBERSHIP STRUCTURE</h2>
+			<ul  style="list-style-type: square;display:block">
 				<li> Criteria: <br> Prospective members (clans) of MEGA must have a minimum of 10 members. Members must have the official version of the game, and have access to communication channels.</li>
-				<br>
-
 				<li>Rights and Privileges:<br> Access to community events, participation in tournaments, inclusion in clan directory, networking opportunities, leadership positions, voting rights, and enhanced visibility.</li>
-				<br>
 				<li>Application and Approval Process:<br> Prospective members must submit an application form, which will be reviewed and verified by MEGA. Approved applicants will be granted Associate Member status.</li>
-				<br>
 				<li>Termination or Suspension: <br>MEGA reserves the right to terminate or suspend membership for violations of the Code of Conduct or non-compliance with policies.</li>
-				<br>
 				<li>Grievance and Appeals Process:<br> A formal process is in place for members to submit complaints or grievances, which will be reviewed and resolved by a designated committee or authority.</li>
-			</ol>
-				<h2><a href="https://docs.google.com/document/d/1-I5qLUhs5aTJZHTuSlqEJBHJYgAS3oEj/edit?usp=drivesdk&ouid=100730888252227469489&rtpof=true&sd=true">MEGA POLICIES</a></h2>
+			</ul>
+			</div>
+			
+				
 		</div>
     </div>
-</body>
 <footer class="footer center" style="background-color: #929fba">
-            <?php include(__DIR__.'/../includes/footer.php'); ?>
+        <?php include(__DIR__.'/../includes/footer.php'); ?>
 </footer>
+</body>
+
 </html>
