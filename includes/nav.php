@@ -5,7 +5,7 @@
       <li><a href="../index.php">Home</a></li>
       <li><a href="./../pages/tournament.php">Tournament</a></li>
       <li><a href="./../pages/clubs.php">Club</a></li>
-      <li> <a href="./../pages/aboutUs.php">About Us</a></li>  
+      <li><a href="./../pages/aboutUs.php">About Us</a></li>  
     </ul>
     <script>
         $( function()

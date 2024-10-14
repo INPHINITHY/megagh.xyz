@@ -112,6 +112,10 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 	position: relative;
 	list-style-position:inside;
 	list-style-type:none;
+	border-bottom: 2px solid  darkgrey;
+}
+#nav li:hover{
+	border-bottom: 2px solid black;
 }
 #nav li a{
 	color: #000;
