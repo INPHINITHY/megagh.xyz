@@ -1,28 +1,177 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="doubletaptogo.min.js" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<link rel="shortcut icon" href=".\..\favicon\favicon-16x16.png" type="image/x-icon">
-<link rel="shortcut icon" href=".\..\favicon\site.webmanifest" type="image/x-icon">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="./../css-library/style.css"  rel="stylesheet" type="text/css" />
-        <title>CLUBS</title>
-<body >	
+<?php include(__DIR__. '/../includes/links.php'); ?>
+ <title>CLUBS</title>
+</head>
+<body class="body-light" >	
 	
 <header class="header">
 	<?php include(__DIR__. '/../includes/nav.php'); ?>
 </header>
-
-	 <div class="content">
-		
-	 </div>
+	<div class="container-lm" style='background-color:#AA767C'>
+	<h1 id="clubs">CLUBS</h1>
+	</div>
+	<div class="container-card">
+	<div class="card-section">
+		<div class="center">
+			just a sample of posible registartions
+            <h2>Contactez-nous</h2>
+            <form action="contact.php" method="post">
+                <input type="text" name="name" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+		<div class="grid-four-columns">
+			<div class="linear-card mamba">
+			<img src="/assets/images/clan-logos/mamba.jpg" alt="">
+			    <h3>Black Mamba </h3>
+				<ul>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+				</ul>
+			</div>
+			<div class="linear-card epg">
+			<img src="/assets/images/clan-logos/epg.jpg" alt="">
+			    <h3>Elite Pro Gamers</h3>
+				<ul>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+				</ul>
+			</div>
+			<div class="linear-card giants">
+			<img src="/assets/images/clan-logos/egiants.jpg" alt="">
+			    <h3>eFootball GIANTS</h3>
+				<ul>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+				</ul>			
+			</div>
+			<div class="linear-card panda">
+			<img src="/assets/images/clan-logos/panda.jpg" alt="">
+			    <h3>eSports PANDA </h3>
+				<ul>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="grid-four-columns">
+			<div class="linear-card immortal">
+				<img src="/assets/images/clan-logos/ims.jpg" alt="">
+					<h3>Immortal Souls of eSports </h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+			<div class="linear-card legendary">
+				<img src="/assets/images/clan-logos/lgc.jpg" alt="">
+			    <h3>Legendary Gamers Clan</h3>
+				<ul>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+				</ul>
+			</div>
+			<div class="linear-card addicts">
+				<img src="/assets/images/clan-logos/addicts.jpg" alt="">
+			    <h3>Les Addicts Du PES</h3>
+				<ul>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+				</ul>			
+			</div>
+			<div class="linear-card panthers">
+				<img src="/assets/images/clan-logos/lpg.jpg" alt="">
+					<h3>Les Panthers </h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="grid-three-columns">
+			<div class="linear-card majestic">
+				<img src="/assets/images/clan-logos/wiz.jpg" alt="">
+					<h3>Majestic Wiz</h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+			<div class="linear-card galaxy">
+				<img src="/assets/images/clan-logos/mgb.jpg" alt="">
+					<h3>MEC Galaxy Boys </h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+			<div class="linear-card militant">
+				<img src="/assets/images/clan-logos/mbc.jpg" alt="">
+					<h3>Militant Boyz Clan</h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="grid-three-columns">
+			<div class="linear-card ninja">
+				<img src="/assets/images/clan-logos/ninja.jpg" alt="">
+					<h3>Ninja Bro's</h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+			<div class="linear-card nocturnal">
+				<img src="/assets/images/clan-logos/ntt.jpg" alt="">
+					<h3>Nocturnal Terror Tribe</h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+			<div class="linear-card vawulence">
+				<img src="/assets/images/clan-logos/sba.jpg" alt="">
+					<h3>Sports Boys Arena</h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+		</div>
+		<div class="grid-three-columns">
+			<div class="linear-card vawulence">
+				<img src="/assets/images/clan-logos/vec.jpg" alt="">
+					<h3>Vawulence Evolution</h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+			<div class="linear-card hunters">
+				<img src="/assets/images/clan-logos/hunters.jpg" alt="">
+					<h3> Wild Hunters</h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+			<div class="linear-card ibb">
+				<img src="/assets/images/clan-logos/ibb.jpg" alt="">
+					<h3>Incredible Bullion Boys</h3>
+					<ul>
+						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					</ul>
+			</div>
+		</div>
+	</div> 
 </body>
 <footer class="footer center" style="background-color: #929fba">
             <?php include(__DIR__.'/../includes/footer.php'); ?>

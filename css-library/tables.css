@@ -1,0 +1,105 @@
+/* .table {
+    max-width:1920px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 50%; 
+	
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+} */
+
+/* Reset some default browser styles */
+
+
+
+/* Main content */
+main {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Featured match styles */
+.featured-match {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.featured-match h1 {
+    color: #152238;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.match {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team img {
+    width: 60px;
+}
+
+.team span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.score {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d71920;
+}
+
+/* Standings table */
+.standings {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.standings h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #152238;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #d71920;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+

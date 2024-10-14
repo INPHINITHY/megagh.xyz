@@ -200,3 +200,127 @@
 	font-weight: bolder;
 }
 
+.linear-card{
+	background-color: #ffffff;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.linear-card img{
+	float:left;
+	max-width: 100%;;
+	height: auto;
+	border-radius: 50%;
+}
+
+.linear-card h3{
+    margin: 0;
+	padding: 0;
+    padding-left: 10px;
+}
+.linear-card ul{display:flex; padding-left: 10px;}
+.linear-card li{margin-right:30px}
+
+/* General card hover effect */
+.linear-card {
+	transition: background-color 0.3s ease;
+  }
+  
+  /* Card-specific hover colors */
+  .mamba:hover {
+    background-color: #D3D5D4; /* Corresponding color for Black Mamba */
+  }
+  
+  .epg:hover {
+    background-color: #4A4A48; /* Corresponding color for Elite Pro Gamers */
+  }
+  
+  .giants:hover {
+    background-color: #CEF9F2; /* Corresponding color for eFootball GIANTS */
+  }
+  
+ .panda:hover {
+   background-color:cornflowerblue; 
+  /* Corresponding color for eSports PANDA */
+ }
+
+ .immortal:hover {
+  background-color: #6D545D; /* Corresponding color for Immortal Souls of eSports */
+ }
+
+ .legendary:hover {
+   background-color: #d633ff; /* Corresponding color for Legendary Gamers Clan */
+ }
+
+ .addicts:hover {
+   background-color: #ff3333; /* Corresponding color for Les Addicts Du PES */
+ }
+
+ .panthers:hover {
+   background-color: #33ffcc; /* Corresponding color for Les Panthers */
+ }
+ .majestic:hover {
+   background-color: #ff33a6; /* Corresponding color for Majestic Wiza */ }
+
+ .galaxy:hover {
+   background-color: #33ff77; /* Corresponding color for MEC Galaxy Boys */
+ }
+
+ .militant:hover {
+   background-color: #ff7733; /* Corresponding color for Militant Boyz Clan */
+ }
+
+ .ninja:hover {
+   background-color: #77ff33; /* Corresponding color for Ninja Bro's */
+}
+
+ .nocturnal:hover {
+   background-color: #9933ff; /* Corresponding color for Nocturnal Terror Tribe */
+ }
+
+ .sports:hover {
+   background-color: #3388ff; /* Corresponding color for Sports Boys Arena */
+ }
+
+ .vawulence:hover {
+   background-color: #ff33d1; /* Corresponding color for Vawulence Evolution */
+ }
+
+ .hunters:hover {
+   background-color: #ff3338; /* Corresponding color for Wild Hunters */
+ }
+ .ibb:hover {
+	background-color: #ff3338; /* Corresponding color for Wild Hunters */
+  }
+
+  
+
+@media only screen and (max-width:720px){
+	.linear-card{
+		background-color: #ffffff;
+		margin: 0 ;
+		margin-bottom: 10px;
+		padding: 20px;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		border-radius: 20px;
+		box-shadow: 0  2px 0px rgba(0, 0, 0, 0.1);
+	}
+	
+	.linear-card img{
+		float:left;
+		width: 15%;;
+		border-radius: 50%;
+	}
+	.linear-card h3{
+		padding-left: 80px;
+	}
+	.linear-card ul{padding-left: 20px;}
+
+	.linear-card:hover{
+		transform: scale(1.03);
+	}
+
+}

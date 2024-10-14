@@ -1,19 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="doubletaptogo.min.js" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<link rel="shortcut icon" href=".\..\favicon\favicon-16x16.png" type="image/x-icon">
-<link rel="shortcut icon" href=".\..\favicon\site.webmanifest" type="image/x-icon">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="./../css-library/style.css"  rel="stylesheet" type="text/css" />
-        <title>TOURNAMENTS</title>
+<?php include(__DIR__. '/../includes/links.php'); ?>
+<title>TOURNAMENTS</title>
 </head>
 
 <body >	
@@ -22,9 +11,60 @@
      </header>
 
 	
-<div class="content">
-	
-</div>
+    <main>
+        <section class="featured-match">
+            <h1>Featured Match</h1>
+            <div class="match">
+                <div class="team">
+                    <img src="team1-logo.png" alt="Team 1">
+                    <span>Manchester United</span>
+                </div>
+                <div class="score">2 - 1</div>
+                <div class="team">
+                    <img src="team2-logo.png" alt="Team 2">
+                    <span>Liverpool</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="standings">
+            <h2>Current Standings</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Played</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Manchester City</td>
+                        <td>9</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Arsenal</td>
+                        <td>9</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Liverpool</td>
+                        <td>9</td>
+                        <td>20</td>
+                    </tr>
+                    https://chatgpt.com/share/670c9111-eb00-8011-bb1e-bcdf4d05c818
+                    <!-- More teams here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
 <footer class="footer" style="background-color: #929fba">
             <?php include('./../includes/footer.php'); ?>
 </footer>
