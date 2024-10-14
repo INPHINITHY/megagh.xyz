@@ -11,13 +11,11 @@
      </header>
 
 	
-    <main>
-    <div class="container-card">
     <div class="tour-table">
-    <table>
-        <h2>Leaderboard</h2>
+    <table style="border-collapse: separate;">
+        <h2 class="center">Leaderboard</h2>
         <thead>
-            <tr>
+            <tr style=" border:none">
                 <th>Rank</th>
                 <th>Team</th>
                 <th>P</th>
@@ -30,12 +28,13 @@
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
+                <td class="td-rank">1</td>
                 <td class='team-cell'>
-                    <img src="/assets/images/clan-logos/ibb.jpg" alt="">
-                    <span class='team-name'>Manchester City</span>
+                    <img src="/assets/images/clan-logos/lpg.jpg" alt="">
+                    <span class='team-name'>Les Panthers</span>
+                    <span class="team-name short">LPG</span>
                 </td>
-                <td>0</td>
+                <td class="td-points fst">0</td>
                 <td>0</td>
                 <td>0</td>
                 <td>0</td>
@@ -43,22 +42,106 @@
                 <td>0</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Arsenal</td>
-                <td>9</td>
-                <td>21</td>
+                <td class="td-rank">2</td>
+                <td class='team-cell'>
+                    <img src="/assets/images/clan-logos/egiants.jpg" alt="">
+                    <span class='team-name'>eFootball Giants</span>
+                    <span class="team-name short">GNT</span>
+                </td>
+                <td class="td-points snd">0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
             </tr>
             <tr>
-                <td>3</td>
-                <td>Liverpool</td>
-                <td>9</td>
-                <td>20</td>
+                <td class="td-rank">3</td>
+                <td class='team-cell'>
+                    <img src="/assets/images/clan-logos/panda.jpg" alt="">
+                    <span class='team-name'>eSports Panda</span>
+                    <span class="team-name short">PANDA</span>
+                </td>
+                <td class="td-points trd">0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="td-rank">4</td>
+                <td class='team-cell'>
+                    <img src="/assets/images/clan-logos/ims.jpg" alt="">
+                    <span class='team-name'>Immortal Souls of eSports</span>
+                    <span class="team-name short">IMS</span>
+                </td>
+                <td class="td-points">0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="td-rank">5</td>
+                <td class='team-cell'>
+                    <img src="/assets/images/clan-logos/lgc.jpg" alt="">
+                    <span class='team-name'>Legendary Gamers Club</span>
+                    <span class="team-name short">LGC</span>
+                </td>
+                <td class="td-points">0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="td-rank">6</td>
+                <td class='team-cell'>
+                    <img src="/assets/images/clan-logos/addicts.jpg" alt="">
+                    <span class='team-name'>Les Addicts Du Pes</span>
+                    <span class="team-name short">Add</span>
+                </td>
+                <td class="td-points">0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="td-rank">7</td>
+                <td class='team-cell'>
+                    <img src="/assets/images/clan-logos/mamba.jpg" alt="">
+                    <span class='team-name'>Black Mamba</span>
+                    <span class="team-name short">BM</span>
+                </td>
+                <td class="td-points">0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td class="td-rank">8</td>
+                <td class='team-cell'>
+                    <img src="/assets/images/clan-logos/vec.jpg" alt="">
+                    <span class='team-name'>Vawulence Evolution Club</span>
+                    <span class="team-name short">VEC</span>
+                </td>
+                <td class="td-points">0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
             </tr>
             </tbody>
     </table>
     </div>
-    </div>
-    </main>
 
 
 <footer class="footer" style="background-color: #929fba">
