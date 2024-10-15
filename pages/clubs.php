@@ -24,6 +24,62 @@
                 <input type="submit" value="Envoyer">
             </form>
         </div>
+		<a href="/club_page.php?team=Les Panthers">Les Panthers</a>
+<a href="/pages/clans/eFootball Giants.php">eFootball Giants</a>
+
+		<div>
+    <?php
+// Load all player stats
+$playerStatsFile = __DIR__ . '/player_stats.json';
+$allPlayers = [];
+if (file_exists($playerStatsFile)) {
+    $playerStats = json_decode(file_get_contents($playerStatsFile), true);
+    foreach ($playerStats as $team => $teamData) {
+        foreach ($teamData['players'] as $playerName => $stats) {
+            $allPlayers[] = [
+                'name' => $playerName,
+                'team' => $team,
+                'goals' => $stats['goals'],
+                'appearances' => $stats['appearances'],
+                'score' => $stats['goals'] / max($stats['appearances'], 1)
+            ];
+        }
+    }
+    usort($allPlayers, function($a, $b) {
+        return $b['score'] - $a['score']; // Sort by descending score
+    });
+}
+?>
+
+<h2 class="center">Player Rankings</h2>
+<table class="player-ranking-table">
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Team</th>
+            <th>Goals</th>
+            <th>Appearances</th>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($allPlayers as $index => $player): ?>
+            <tr>
+                <td><?php echo $index + 1; ?></td>
+                <td><?php echo $player['name']; ?></td>
+                <td><?php echo $player['team']; ?></td>
+                <td><?php echo $player['goals']; ?></td>
+                <td><?php echo $player['appearances']; ?></td>
+                <td><?php echo number_format($player['score'], 2); ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+</div>
+
+
+
     </div>
 		<div class="grid-four-columns">
 			<div class="linear-card mamba">

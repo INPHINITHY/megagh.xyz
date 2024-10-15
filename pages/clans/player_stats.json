@@ -1,0 +1,19 @@
+{
+    "teams": {
+      "eFootball Giants": {
+        "team_logo": "/assets/images/clan-logos/lpg.jpg",
+        "players": [
+          {
+            "player_name": "John Doe",
+            "position": "Forward",
+            "goals": 10,
+            "appearances": 15,
+            "scores": [  ]
+          }
+          
+        ]
+      }
+      
+    }
+  }
+  
