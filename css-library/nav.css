@@ -200,6 +200,13 @@ These values do also need to be changed further down, in the 600px, 400px, and 3
 		text-decoration:none;
 		justify-content: space-between;
 	}
+
+	
+	#nav li{border-bottom: 0px   darkgrey}
+
+	#nav li:hover{
+		border-bottom: 0px  darkgrey
+	}
 	
 	#nav a{
 		font-size:18px;	

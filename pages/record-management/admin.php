@@ -34,18 +34,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css-library/style.css">
     <title>Password Protected Page</title>
 </head>
-<body>
+<body  class="body-light">
+    <div class="card-img">
     <h1>Please Enter the Password</h1>
 
-    <?php if (isset($error)): ?>
-        <p style="color: red;"><?= htmlspecialchars($error) ?></p>
-    <?php endif; ?>
+<?php if (isset($error)): ?>
+    <p style="color: red;"><?= htmlspecialchars($error) ?></p>
+<?php endif; ?>
 
-    <form method="post" action="">
-        <input type="password" name="password" required>
-        <button type="submit">Submit</button>
-    </form>
+<form method="post" action="">
+    <input type="password" name="password" required>
+    <button type="submit">Submit</button>
+</form>
+    </div>
+    
 </body>
 </html>

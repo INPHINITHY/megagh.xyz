@@ -83,7 +83,7 @@ if (file_exists($playerStatsFile)) {
     </div>
 		<div class="grid-four-columns">
 			<div class="linear-card mamba">
-			<img src="/assets/images/clan-logos/mamba.jpg" alt="">
+			<img src="/assets/images/clan-logos/black-mamba.jpg" alt="">
 			    <h3>Black Mamba </h3>
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -91,7 +91,7 @@ if (file_exists($playerStatsFile)) {
 				</ul>
 			</div>
 			<div class="linear-card epg">
-			<img src="/assets/images/clan-logos/epg.jpg" alt="">
+			<img src="/assets/images/clan-logos/elite-pro-gamers.jpg" alt="">
 			    <h3>Elite Pro Gamers</h3>
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -99,7 +99,7 @@ if (file_exists($playerStatsFile)) {
 				</ul>
 			</div>
 			<div class="linear-card giants">
-			<img src="/assets/images/clan-logos/egiants.jpg" alt="">
+			<img src="/assets/images/clan-logos/efootball-giants.jpg" alt="">
 			    <h3>eFootball GIANTS</h3>
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -107,7 +107,7 @@ if (file_exists($playerStatsFile)) {
 				</ul>			
 			</div>
 			<div class="linear-card panda">
-			<img src="/assets/images/clan-logos/panda.jpg" alt="">
+			<img src="/assets/images/clan-logos/esports-panda.jpg" alt="">
 			    <h3>eSports PANDA </h3>
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -117,7 +117,7 @@ if (file_exists($playerStatsFile)) {
 		</div>
 		<div class="grid-four-columns">
 			<div class="linear-card immortal">
-				<img src="/assets/images/clan-logos/ims.jpg" alt="">
+				<img src="/assets/images/clan-logos/immortal-souls-of-esports.jpg" alt="">
 					<h3>Immortal Souls of eSports </h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -125,7 +125,7 @@ if (file_exists($playerStatsFile)) {
 					</ul>
 			</div>
 			<div class="linear-card legendary">
-				<img src="/assets/images/clan-logos/lgc.jpg" alt="">
+				<img src="/assets/images/clan-logos/legendary-gamers-club.jpg" alt="">
 			    <h3>Legendary Gamers Clan</h3>
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -133,7 +133,7 @@ if (file_exists($playerStatsFile)) {
 				</ul>
 			</div>
 			<div class="linear-card addicts">
-				<img src="/assets/images/clan-logos/addicts.jpg" alt="">
+				<img src="/assets/images/clan-logos/les-addicts-du-pes.jpg" alt="">
 			    <h3>Les Addicts Du PES</h3>
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -141,7 +141,7 @@ if (file_exists($playerStatsFile)) {
 				</ul>			
 			</div>
 			<div class="linear-card panthers">
-				<img src="/assets/images/clan-logos/lpg.jpg" alt="">
+				<img src="/assets/images/clan-logos/les-panthers.jpg" alt="">
 					<h3>Les Panthers </h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -151,7 +151,7 @@ if (file_exists($playerStatsFile)) {
 		</div>
 		<div class="grid-three-columns">
 			<div class="linear-card majestic">
-				<img src="/assets/images/clan-logos/wiz.jpg" alt="">
+				<img src="/assets/images/clan-logos/majestic-wiz.jpg" alt="">
 					<h3>Majestic Wiz</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -159,7 +159,7 @@ if (file_exists($playerStatsFile)) {
 					</ul>
 			</div>
 			<div class="linear-card galaxy">
-				<img src="/assets/images/clan-logos/mgb.jpg" alt="">
+				<img src="/assets/images/clan-logos/mec-galaxy-boys.jpg" alt="">
 					<h3>MEC Galaxy Boys </h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -167,7 +167,7 @@ if (file_exists($playerStatsFile)) {
 					</ul>
 			</div>
 			<div class="linear-card militant">
-				<img src="/assets/images/clan-logos/mbc.jpg" alt="">
+				<img src="/assets/images/clan-logos/militant-boyz-clan.jpg" alt="">
 					<h3>Militant Boyz Clan</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -177,7 +177,7 @@ if (file_exists($playerStatsFile)) {
 		</div>
 		<div class="grid-three-columns">
 			<div class="linear-card ninja">
-				<img src="/assets/images/clan-logos/ninja.jpg" alt="">
+				<img src="/assets/images/clan-logos/ninja-bros.jpg" alt="">
 					<h3>Ninja Bro's</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -185,7 +185,7 @@ if (file_exists($playerStatsFile)) {
 					</ul>
 			</div>
 			<div class="linear-card nocturnal">
-				<img src="/assets/images/clan-logos/ntt.jpg" alt="">
+				<img src="/assets/images/clan-logos/nocturnal-terror-tribe.jpg" alt="">
 					<h3>Nocturnal Terror Tribe</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -193,7 +193,7 @@ if (file_exists($playerStatsFile)) {
 					</ul>
 			</div>
 			<div class="linear-card vawulence">
-				<img src="/assets/images/clan-logos/sba.jpg" alt="">
+				<img src="/assets/images/clan-logos/sports-boys-arena.jpg" alt="">
 					<h3>Sports Boys Arena</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -203,7 +203,7 @@ if (file_exists($playerStatsFile)) {
 		</div>
 		<div class="grid-three-columns">
 			<div class="linear-card vawulence">
-				<img src="/assets/images/clan-logos/vec.jpg" alt="">
+				<img src="/assets/images/clan-logos/vawulence-evolution-club.jpg" alt="">
 					<h3>Vawulence Evolution</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -211,7 +211,7 @@ if (file_exists($playerStatsFile)) {
 					</ul>
 			</div>
 			<div class="linear-card hunters">
-				<img src="/assets/images/clan-logos/hunters.jpg" alt="">
+				<img src="/assets/images/clan-logos/wild-hunters.jpg" alt="">
 					<h3> Wild Hunters</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
@@ -219,7 +219,7 @@ if (file_exists($playerStatsFile)) {
 					</ul>
 			</div>
 			<div class="linear-card ibb">
-				<img src="/assets/images/clan-logos/ibb.jpg" alt="">
+				<img src="/assets/images/clan-logos/incredible-bullion-boys.jpg" alt="">
 					<h3>Incredible Bullion Boys</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
