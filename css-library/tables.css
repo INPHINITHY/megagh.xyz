@@ -1,21 +1,21 @@
 .tour-table{
-	width:50%;
-	margin: 20px auto;
-	padding-left: 100px;
-	padding-right: 100px;
-
-
+	width:100%;
+	border:1px;
+    border-collapse: collapse;
 }
 
 .team-cell {
     display: flex;
     align-items: center;
-    width: 500px;
+    text-align: left;
+    width: 270px;
 }
 .team-cell img {
-    width: 7%;
+    display: block;
+    width: 20%;
     border-radius: 50%;
-    margin-right: 10px; /* Space between image and text */
+    margin-right: 10px; 
+    /* Space between image and text */
 }
 
 .td-rank{
@@ -25,6 +25,9 @@
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-left: 3px solid white ;
+}
+.player-cell{
+    text-align: center;
 }
 .fst{
     border-left: 3px solid green;
@@ -46,7 +49,7 @@
 th{
     border: none;
     padding: 5px 8px;
-    text-align: left;
+    text-align: center;
 }
 tr{
     margin-bottom: 20px;
@@ -60,17 +63,17 @@ td {
 
 @media only screen and (max-width:720px){
     .team-cell {
-        width: auto;
+        width:100px;
     }
     .team-cell img {
-        width: 15%;
+        align-items: center;
+        width: 30%;
         border-radius: 50%;
         margin-right: 10px; /* Space between image and text */
     }
     .tour-table{
         width:100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        margin: auto;
     }
     .team-name {
         display: none;

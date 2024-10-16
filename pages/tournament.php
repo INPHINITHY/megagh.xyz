@@ -31,24 +31,22 @@ $teams = [
     <header class="header">
         <?php include('./../includes/nav.php'); ?>
     </header>
-
-    <div class="tour-table" style="margin-bottom:100px">
-        <table style="border-collapse: separate;">
-            <h2 class="center">Leaderboard</h2>
-            <thead>
-                <tr style="border:none">
-                    <th>Rank</th>
-                    <th>Team</th>
-                    <th>P</th>
-                    <th>MP</th>
-                    <th>W</th>
-                    <th>D</th>
-                    <th>L</th>
-                    <th>GD</th>
+    <?php
+    echo "<h2 class='center'>Division One</h2>";
+            echo "<table  style='width: 100%; border-collapse: collapse;'>";
+            echo "<thead>
+                <tr>
+                        <th>Rank</th>
+                        <th style='text-align:left'>Team</th>
+                        <th>P</th>
+                        <th>MP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GD</th>
                 </tr>
             </thead>
-            <tbody>
-                <?php
+            <tbody>";
                 // Sort teams by points (highest to lowest)
                 usort($teams, function($team1, $team2) use ($scores) {
                     return ($scores[$team2]['points'] ?? 0) - ($scores[$team1]['points'] ?? 0);
@@ -86,10 +84,8 @@ $teams = [
                     </tr>";
                     $rank++;
                 }
+                echo "</tbody></table>";
                 ?>
-            </tbody>
-        </table>
-    </div>
     <footer class="footer" style="background-color: #929fba">
         <?php include('./../includes/footer.php'); ?>
     </footer>

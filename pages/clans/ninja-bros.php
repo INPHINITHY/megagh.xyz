@@ -13,7 +13,7 @@
     </header>
 	<?php
 // Load player stats data for the club
-$team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'eFootball Giants'; // Default team if not provided
+$team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'Ninja Bros'; // Default team if not provided
 
 $playerStatsFile = __DIR__ . '/player_stats.json';
 
@@ -53,9 +53,10 @@ if (file_exists($playerStatsFile)) {
 <div class="player-card-grid">
     <?php foreach ($players as $playerName => $stats): ?>
         <div class="player-card">
-            <img src="/assets/images/players/<?php echo strtolower(str_replace(' ', '_', $playerName)); ?>.jpg" alt="<?php echo $playerName; ?>" />
+            <img src="/assets/images/players/<?php echo $player['img']; ?>.jpg" alt="<?php echo $player['player_name']; ?>" />
             <h3><?php echo $playerName; ?></h3>
             <p>Goals: <?php echo $stats['goals']; ?></p>
+            <p>GD: <?php echo $stats['gd']?></p>
             <p>Appearances: <?php echo $stats['appearances']; ?></p>
             <p>Score: <?php echo number_format($stats['goals'] / max($stats['appearances'], 1), 2); ?></p>
         </div>

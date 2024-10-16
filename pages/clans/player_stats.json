@@ -1,1 +1,2140 @@
-{"teams":{"eFootball Giants":{"players":[{"player_name":"John Doe","goals":12,"appearances":16,"scores":[],"gd":1}]},"Les Addicts Du Pes":{"players":[{"player_name":"Jane Smith","goals":9,"appearances":13,"scores":[],"gd":-1},{"player_name":"Alex Brown","goals":2,"appearances":20,"scores":[]}]}}}
+{
+    "teams": {
+        "eFootball Giants": {
+            "players": [
+                {
+                    "player_name": "Inphinithy",
+                    "img": "inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Walker",
+                    "img": "inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Goodboyy",
+                    "img": "inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Ghostboy",
+                    "img": "inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Skele",
+                    "img": "inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "KrisDem",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Popular-Loner",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "God-Over-everything",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "King Rhymes",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Kartel",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Victorious-King",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "NBA",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Andy",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "Jnr-Cj",
+                    "img":"inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "King",
+                    "img": "inphinithy",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+            ]
+        },
+          "Les Addicts Du Pes": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Black Mamba": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Elite Pro Gamers": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "eSports PANDA": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Immortal Souls of eSports": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Legendary Gamers Clan": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Les Panthers": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Majestic Wiza": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "MEC Galaxy Boys": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Militant Boyz Clan": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Ninja Bro's": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Nocturnal Terror Tribe": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Sports Boys Arena": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Vawulence Evolution": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+              
+            
+            ]
+        },
+        "Wild Hunters": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+            ]
+        },
+        "Incredible Bullion Boys": {
+            "players": [
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                },
+                {
+                    "player_name": "",
+                    "img": "",
+                    "goals": 0,
+                    "appearances": 0,
+                    "scores": [],
+                    "gd": 0
+                }
+            ]
+        }
+    }
+}

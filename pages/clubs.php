@@ -3,67 +3,84 @@
 <head>
 <?php include(__DIR__. '/../includes/links.php'); ?>
  <title>CLUBS</title>
+ <style>
+	@media only screen and (max-width:720px){
+		.team-name {
+        display: block;
+    }
+
+    .short{
+        display:none;
+    }
+	}
+ </style>
 </head>
 <body class="body-light" >	
 	
 <header class="header">
 	<?php include(__DIR__. '/../includes/nav.php'); ?>
 </header>
-<div class="container-lm" style='background-color:#AA767C'><h1 id="clubs">CLUBS</h1></div>
-<div class="container-card">
-<div class="tour-table" style="margin-bottom:100px">
-			<?php
-		// Load all player stats
-		$playerStatsFile = __DIR__ . '/player_stats.json';
-		$allPlayers = [];
-		if (file_exists($playerStatsFile)) {
-			$playerStats = json_decode(file_get_contents($playerStatsFile), true);
-			foreach ($playerStats as $team => $teamData) {
-				foreach ($teamData['players'] as $playerName => $stats) {
-					$allPlayers[] = [
-						'name' => $playerName,
-						'team' => $team,
-						'goals' => $stats['goals'],
-						'appearances' => $stats['appearances'],
-						'score' => $stats['goals'] / max($stats['appearances'], 1)
-					];
-				}
+<?php
+echo "<h2 class='center'>Division Rankings</h2>";
+            echo "<table  style='width: 100%; border-collapse: collapse;'>";
+            echo "<thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th style='text-align:left'>Player</th>
+                        <th>Goals</th>
+                        <th>Appearances</th>
+                        <th>Average Score (%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>";
+
+            // Load all player stats
+            $playerStatsFile = __DIR__ . '/clans/player_stats.json';
+            $allPlayers = [];
+
+            if (file_exists($playerStatsFile)) {
+                $playerStats = json_decode(file_get_contents($playerStatsFile), true);
+                
+                // Aggregate all players from all teams
+                foreach ($playerStats['teams'] as $team => $teamData) {
+                    foreach ($teamData['players'] as $playerName => $stats) {
+                        $allPlayers[] = [
+                            'name' => $stats['player_name'],
+                            'team' => $team,
+                            'goals' => $stats['goals'],
+                            'appearances' => $stats['appearances'],
+                            'score' => $stats['goals'] / max($stats['appearances'], 1) // Calculate score
+                        ];
+                    }
+                }
+
+                // Sort all players by score (highest first)
+                usort($allPlayers, function($a, $b) {
+                    return $b['score'] <=> $a['score']; // Sort by descending score
+                });
+
+                // Get the top players (for example, the top 10)
+                $topPlayers = array_slice($allPlayers, 0, 10); // Change the number to get more or fewer players
+
+                // Output the top players in a table format
+                $rank = 1;
+                foreach ($topPlayers as $player) {
+                echo "<tr>
+                        <td class='td-rank'>{$rank}</td>
+                        <td class='team-cell'>
+							<span class='team-name'>{$player['name']}</span>
+                        </td>
+                        <td>{$player['goals']}</td>
+                        <td>{$player['appearances']}</td>
+                        <td>" . number_format($player['score'], 2) . "</td>
+                    </tr>";
+                    $rank++;
+                }
+				echo "</tbody></table>";
+			} else {
+				echo "<h2>Team '{$team}' not found.</h2>";
 			}
-			usort($allPlayers, function($a, $b) {
-				return $b['score'] - $a['score']; // Sort by descending score
-			});
-		}
 		?>
-<table style="border-collapse: separate;">
-<h2 class="center">Ranks</h2>
-			<thead>
-			<tr style="border:none">
-					<th>Rank</th>
-					<th>Player</th>
-					<th>Team</th>
-					<th>Goals</th>
-					<th>Appearances</th>
-					<th>Score</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php foreach ($allPlayers as $index => $player): ?>
-					<tr>
-						<td><?php echo $index + 1; ?></td>
-						<td><?php echo $player['name']; ?></td>
-						<td><?php echo $player['team']; ?></td>
-						<td><?php echo $player['goals']; ?></td>
-						<td><?php echo $player['appearances']; ?></td>
-						<td><?php echo number_format($player['score'], 2); ?></td>
-					</tr>
-				<?php endforeach; ?>
-			</tbody>
-		</table>
-	</div>
-</div>
-
-
-
     </div>
 		<div class="grid-four-columns">
 			<div class="linear-card mamba">
@@ -241,6 +258,34 @@
             </form>
     	</div>
 	</div>
+	<table style="border-collapse: separate;">
+<h2 class="center">Ranks</h2>
+			<thead>
+			<tr style="border:none">
+					<th>Rank</th>
+					<th>Player</th>
+					<th>Team</th>
+					<th>Goals</th>
+					<th>Appearances</th>
+					<th>Score</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ($allPlayers as $index => $player): ?>
+					<tr>
+						<td><?php echo $index + 1; ?></td>
+						<td><?php echo $player['name']; ?></td>
+						<td><?php echo $player['team']; ?></td>
+						<td><?php echo $player['goals']; ?></td>
+						<td><?php echo $player['appearances']; ?></td>
+						<td><?php echo number_format($player['score'], 2); ?></td>
+					</tr>
+					
+				<?php endforeach; ?>
+			</tbody>
+		</table>
+	</div>
+</div>
 </body>
 <footer class="footer center" style="background-color: #929fba">
             <?php include(__DIR__.'/../includes/footer.php'); ?>
