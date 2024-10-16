@@ -13,7 +13,7 @@
     </header>
 	<?php
 // Load player stats data for the club
-$team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'eFootball Giants'; // Default team if not provided
+$team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'Legendary Gamers Club'; // Default team if not provided
 
 $playerStatsFile = __DIR__ . '/player_stats.json';
 
