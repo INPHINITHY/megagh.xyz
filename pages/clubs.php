@@ -9,73 +9,57 @@
 <header class="header">
 	<?php include(__DIR__. '/../includes/nav.php'); ?>
 </header>
-	<div class="container-lm" style='background-color:#AA767C'>
-	<h1 id="clubs">CLUBS</h1>
+<div class="container-lm" style='background-color:#AA767C'><h1 id="clubs">CLUBS</h1></div>
+<div class="container-card">
+<div class="tour-table" style="margin-bottom:100px">
+			<?php
+		// Load all player stats
+		$playerStatsFile = __DIR__ . '/player_stats.json';
+		$allPlayers = [];
+		if (file_exists($playerStatsFile)) {
+			$playerStats = json_decode(file_get_contents($playerStatsFile), true);
+			foreach ($playerStats as $team => $teamData) {
+				foreach ($teamData['players'] as $playerName => $stats) {
+					$allPlayers[] = [
+						'name' => $playerName,
+						'team' => $team,
+						'goals' => $stats['goals'],
+						'appearances' => $stats['appearances'],
+						'score' => $stats['goals'] / max($stats['appearances'], 1)
+					];
+				}
+			}
+			usort($allPlayers, function($a, $b) {
+				return $b['score'] - $a['score']; // Sort by descending score
+			});
+		}
+		?>
+<table style="border-collapse: separate;">
+<h2 class="center">Ranks</h2>
+			<thead>
+			<tr style="border:none">
+					<th>Rank</th>
+					<th>Player</th>
+					<th>Team</th>
+					<th>Goals</th>
+					<th>Appearances</th>
+					<th>Score</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php foreach ($allPlayers as $index => $player): ?>
+					<tr>
+						<td><?php echo $index + 1; ?></td>
+						<td><?php echo $player['name']; ?></td>
+						<td><?php echo $player['team']; ?></td>
+						<td><?php echo $player['goals']; ?></td>
+						<td><?php echo $player['appearances']; ?></td>
+						<td><?php echo number_format($player['score'], 2); ?></td>
+					</tr>
+				<?php endforeach; ?>
+			</tbody>
+		</table>
 	</div>
-	<div class="container-card">
-	<div class="card-section">
-		<div class="center">
-			just a sample of posible registartions
-            <h2>Contactez-nous</h2>
-            <form action="contact.php" method="post">
-                <input type="text" name="name" placeholder="Nom" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Message" required></textarea>
-                <input type="submit" value="Envoyer">
-            </form>
-        </div>
-		<a href="/club_page.php?team=Les Panthers">Les Panthers</a>
-<a href="/pages/clans/eFootball Giants.php">eFootball Giants</a>
-
-		<div>
-    <?php
-// Load all player stats
-$playerStatsFile = __DIR__ . '/player_stats.json';
-$allPlayers = [];
-if (file_exists($playerStatsFile)) {
-    $playerStats = json_decode(file_get_contents($playerStatsFile), true);
-    foreach ($playerStats as $team => $teamData) {
-        foreach ($teamData['players'] as $playerName => $stats) {
-            $allPlayers[] = [
-                'name' => $playerName,
-                'team' => $team,
-                'goals' => $stats['goals'],
-                'appearances' => $stats['appearances'],
-                'score' => $stats['goals'] / max($stats['appearances'], 1)
-            ];
-        }
-    }
-    usort($allPlayers, function($a, $b) {
-        return $b['score'] - $a['score']; // Sort by descending score
-    });
-}
-?>
-
-<h2 class="center">Player Rankings</h2>
-<table class="player-ranking-table">
-    <thead>
-        <tr>
-            <th>Rank</th>
-            <th>Player</th>
-            <th>Team</th>
-            <th>Goals</th>
-            <th>Appearances</th>
-            <th>Score</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach ($allPlayers as $index => $player): ?>
-            <tr>
-                <td><?php echo $index + 1; ?></td>
-                <td><?php echo $player['name']; ?></td>
-                <td><?php echo $player['team']; ?></td>
-                <td><?php echo $player['goals']; ?></td>
-                <td><?php echo $player['appearances']; ?></td>
-                <td><?php echo number_format($player['score'], 2); ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
 </div>
 
 
@@ -88,6 +72,7 @@ if (file_exists($playerStatsFile)) {
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
 					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/black-mamba.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 				</ul>
 			</div>
 			<div class="linear-card epg">
@@ -96,6 +81,7 @@ if (file_exists($playerStatsFile)) {
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
 					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/elite-pro-gamers.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 				</ul>
 			</div>
 			<div class="linear-card giants">
@@ -104,6 +90,7 @@ if (file_exists($playerStatsFile)) {
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
 					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/eFootball Giants.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 				</ul>			
 			</div>
 			<div class="linear-card panda">
@@ -112,6 +99,7 @@ if (file_exists($playerStatsFile)) {
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
 					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/esports-panda.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -120,8 +108,9 @@ if (file_exists($playerStatsFile)) {
 				<img src="/assets/images/clan-logos/immortal-souls-of-esports.jpg" alt="">
 					<h3>Immortal Souls of eSports </h3>
 					<ul>
-						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/immortal-souls-of-esports.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 			<div class="linear-card legendary">
@@ -130,6 +119,7 @@ if (file_exists($playerStatsFile)) {
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
 					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/legendary-gamers-clan.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 				</ul>
 			</div>
 			<div class="linear-card addicts">
@@ -138,14 +128,16 @@ if (file_exists($playerStatsFile)) {
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
 					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/le-addicts-du-pes.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 				</ul>			
 			</div>
 			<div class="linear-card panthers">
 				<img src="/assets/images/clan-logos/les-panthers.jpg" alt="">
 					<h3>Les Panthers </h3>
 					<ul>
-						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/les-panthers.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 		</div>
@@ -154,16 +146,18 @@ if (file_exists($playerStatsFile)) {
 				<img src="/assets/images/clan-logos/majestic-wiz.jpg" alt="">
 					<h3>Majestic Wiz</h3>
 					<ul>
-						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/majestic-wiz.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 			<div class="linear-card galaxy">
 				<img src="/assets/images/clan-logos/mec-galaxy-boys.jpg" alt="">
 					<h3>MEC Galaxy Boys </h3>
 					<ul>
-						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/mec-galaxy-boys.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 			<div class="linear-card militant">
@@ -171,7 +165,8 @@ if (file_exists($playerStatsFile)) {
 					<h3>Militant Boyz Clan</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/militant-boyz-clan.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 		</div>
@@ -181,7 +176,8 @@ if (file_exists($playerStatsFile)) {
 					<h3>Ninja Bro's</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/ninja-bros.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 			<div class="linear-card nocturnal">
@@ -189,7 +185,8 @@ if (file_exists($playerStatsFile)) {
 					<h3>Nocturnal Terror Tribe</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/nocturnal-terror-tribe.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 			<div class="linear-card vawulence">
@@ -197,7 +194,8 @@ if (file_exists($playerStatsFile)) {
 					<h3>Sports Boys Arena</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/sports-boys-arena.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 		</div>
@@ -207,7 +205,8 @@ if (file_exists($playerStatsFile)) {
 					<h3>Vawulence Evolution</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/vawulence-evolution.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 			<div class="linear-card hunters">
@@ -215,7 +214,8 @@ if (file_exists($playerStatsFile)) {
 					<h3> Wild Hunters</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/wild-hunters.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 			<div class="linear-card ibb">
@@ -223,11 +223,24 @@ if (file_exists($playerStatsFile)) {
 					<h3>Incredible Bullion Boys</h3>
 					<ul>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+					<li><a href="./clans/incredible-bullion-boys.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 					</ul>
 			</div>
 		</div>
 	</div> 
+	<div class="card-section">
+		<div class="center">
+			just a sample of posible registartions
+            <h2>Contactez-nous</h2>
+            <form action="contact.php" method="post">
+                <input type="text" name="name" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+    	</div>
+	</div>
 </body>
 <footer class="footer center" style="background-color: #929fba">
             <?php include(__DIR__.'/../includes/footer.php'); ?>

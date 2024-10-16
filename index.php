@@ -23,39 +23,6 @@
 			<h1 >Welcome</h1>
 			<p style="font-size:20px">Join the ultimate gaming experience</p>
 		 </div>
-    </div> 
-	<div class="container-lm">
-		<div class="grid-two-columns">
-			<div class=" imglinks">
-				<a href="index.php">
-					<img src="assets/images/index/Homeimg.jpg" alt="">
-				<p>Home</p>
-				</a>
-			</div>
-
-			<div class="imglinks">
-				<a href="pages/clubs.php">
-					<img src="assets/images/index/clubsimg.jpg" alt="">
-				<p>Clubs</p>
-				</a>
-			</div>
-        </div>
-			
-		<div class="grid-two-columns">
-			<div class=" imglinks">
-				<a href="pages/tournament.php">
-					<img src="assets/images/index/tours.avif" alt="">
-			          <p>Tournaments</p>
-				</a>
-			</div>
-
-			<div class="imglinks">
-				<a href="pages/aboutUs.php">
-					<img src="assets/images/index/about-logo.jpg"  alt="">
-					 <p>About us</P>
-				</a>
-			</div>
-		</div>
     </div>
 	<div class="card-section">
 			<h2>MISSION :</h2>
