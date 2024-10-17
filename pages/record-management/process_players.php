@@ -24,11 +24,12 @@
     error_reporting(E_ALL);
     
     // File path to the player stats JSON
-    $playerStatsFile =$_SERVER['DOCUMENT_ROOT'].'/pages/clans/player_stats.json';
-
-    // Check if the player stats file exists
-    if (!file_exists($playerStatsFile)) {
-        echo "<h2>Player stats file not found.</h2>";
+    $playerStatsFile = $_SERVER['DOCUMENT_ROOT'].'/pages/clans/player_stats.json';
+    if (file_exists($playerStatsFile)) {
+        $jsonContent = file_get_contents($playerStatsFile);
+        $playerStats = json_decode($jsonContent, true); // Initialize player stats
+    } else {
+        echo "Player stats file not found!";
         exit;
     }
     if (file_put_contents($playerStatsFile, json_encode($playerStats, JSON_PRETTY_PRINT)) === false) {
