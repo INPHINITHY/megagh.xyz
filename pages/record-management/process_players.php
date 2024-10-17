@@ -18,43 +18,34 @@
     }
 </style>
 <body class="body-light">
-    <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-    
-    // File path to the player stats JSON
-    $playerStatsFile = $_SERVER['DOCUMENT_ROOT'].'/pages/clans/player_stats.json';
-    if (file_exists($playerStatsFile)) {
-        $jsonContent = file_get_contents($playerStatsFile);
-        $playerStats = json_decode($jsonContent, true); // Initialize player stats
-    } else {
-        echo "Player stats file not found!";
-        exit;
-    }
-    if (file_put_contents($playerStatsFile, json_encode($playerStats, JSON_PRETTY_PRINT)) === false) {
-        echo "<h2>Error writing to player stats file.</h2>";
-    } else {
-        echo "<h3>Scores Updated!</h3>";
-    }
-    
+<?php
+// File path to the player stats JSON
+$playerStatsFile = $_SERVER['DOCUMENT_ROOT'].'/pages/clans/player_stats.json';
 
-    // Load and decode the player stats data
-    $playerStats = json_decode(file_get_contents($playerStatsFile), true);
+// Check if the player stats file exists
+if (!file_exists($playerStatsFile)) {
+    echo "<h2>Player stats file not found.</h2>";
+    exit;
+}
 
-    // Fetch available teams from the data
-    $teams = array_keys($playerStats['teams']);
+// Load and decode the player stats data
+$playerStats = json_decode(file_get_contents($playerStatsFile), true);
 
-    // Initialize selected team and player variables
-    $team1 = isset($_POST['team1']) ? $_POST['team1'] : '';
-    $team2 = isset($_POST['team2']) ? $_POST['team2'] : '';
-    $player1 = isset($_POST['player1']) ? $_POST['player1'] : '';
-    $player2 = isset($_POST['player2']) ? $_POST['player2'] : '';
+// Fetch available teams from the data
+$teams = array_keys($playerStats['teams']);
 
-    // Handle form submission for score input
-    if (isset($_POST['submit_scores'])) {
-        $score1 = isset($_POST['score1']) ? intval($_POST['score1']) : 0;
-        $score2 = isset($_POST['score2']) ? intval($_POST['score2']) : 0;
+// Initialize selected team and player variables
+$team1 = isset($_POST['team1']) ? $_POST['team1'] : '';
+$team2 = isset($_POST['team2']) ? $_POST['team2'] : '';
+
+// Handle form submission for score input
+if (isset($_POST['submit_scores'])) {
+    for ($i = 1; $i <= 5; $i++) {
+        // Fetch player names and scores for this match
+        $player1 = isset($_POST['player1_' . $i]) ? $_POST['player1_' . $i] : '';
+        $player2 = isset($_POST['player2_' . $i]) ? $_POST['player2_' . $i] : '';
+        $score1 = isset($_POST['score1_' . $i]) ? intval($_POST['score1_' . $i]) : 0;
+        $score2 = isset($_POST['score2_' . $i]) ? intval($_POST['score2_' . $i]) : 0;
 
         // Update appearances and goals for both players
         foreach ($playerStats['teams'][$team1]['players'] as &$p1) {
@@ -71,40 +62,27 @@
                 $p2['gd'] = isset($p2['gd']) ? $p2['gd'] + ($score2 - $score1) : ($score2 - $score1);
             }
         }
-
-        // Save updated player stats back to the JSON file
-        $jsonData = json_encode($playerStats, JSON_PRETTY_PRINT);
-        if ($jsonData === false) {
-            echo "JSON encoding error: " . json_last_error_msg();
-        } else {
-            file_put_contents($playerStatsFile, $jsonData);
-            $updatedData = json_decode(file_get_contents($playerStatsFile), true);
-            echo "<pre>";
-            print_r($updatedData);  // Check if the file has the correct updated data
-            echo "</pre>";
-        }
     }
-    $file = fopen($playerStatsFile, 'w');
-    if (flock($file, LOCK_EX)) {  // Acquire an exclusive lock
-        fwrite($file, $jsonData);
-        flock($file, LOCK_UN);    // Release the lock
+
+    // Save updated player stats back to the JSON file
+    if (file_put_contents($playerStatsFile, json_encode($playerStats))) {
+        echo "<h3>Scores Updated!</h3>";
     } else {
-        echo "Could not lock the file for writing.";
+        echo "<h3>Error writing to player stats file.</h3>";
     }
-    fclose($file);
+}
 
-        
-
-    // Handle team and player selection for the "vs" matchup
-    if (!empty($team1) && !empty($team2)) {
-        if (isset($playerStats['teams'][$team1]) && isset($playerStats['teams'][$team2])) {
-            $playersTeam1 = $playerStats['teams'][$team1]['players'];
-            $playersTeam2 = $playerStats['teams'][$team2]['players'];
-        } else {
-            echo "<h2>Invalid team selection.</h2>";
-        }
+// Handle team and player selection for the "vs" matchup
+if (!empty($team1) && !empty($team2)) {
+    if (isset($playerStats['teams'][$team1]) && isset($playerStats['teams'][$team2])) {
+        $playersTeam1 = $playerStats['teams'][$team1]['players'];
+        $playersTeam2 = $playerStats['teams'][$team2]['players'];
+    } else {
+        echo "<h2>Invalid team selection.</h2>";
     }
-    ?>
+}
+?>
+
 
     <!-- Form to select teams -->
     <h2 class="center">SELECT THE CLUBS</h2>
