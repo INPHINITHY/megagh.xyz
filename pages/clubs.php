@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<?php include(__DIR__. '/../includes/links.php'); ?>
+	<?php include(__DIR__. '/../includes/links.php'); ?>
  <title>CLUBS</title>
  <style>
 	@media only screen and (max-width:720px){
@@ -16,10 +16,9 @@
  </style>
 </head>
 <body class="body-light" >	
-	
-<header class="header">
-	<?php include(__DIR__. '/../includes/nav.php'); ?>
-</header>
+	<header class="header">
+		<?php include(__DIR__. '/../includes/nav.php'); ?>
+	</header>
 <?php
 echo "<h2 class='center'>Division Rankings</h2>";
             echo "<table  style='width: 100%; border-collapse: collapse;'>";
@@ -246,46 +245,6 @@ echo "<h2 class='center'>Division Rankings</h2>";
 			</div>
 		</div>
 	</div> 
-	<div class="card-section">
-		<div class="center">
-			just a sample of posible registartions
-            <h2>Contactez-nous</h2>
-            <form action="contact.php" method="post">
-                <input type="text" name="name" placeholder="Nom" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Message" required></textarea>
-                <input type="submit" value="Envoyer">
-            </form>
-    	</div>
-	</div>
-	<?php
-echo "<h2 class='center'>Overall Rankings</h2>";
-            echo "<table  style='width: 100%; border-collapse: collapse;'>";
-            echo "<thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th style='text-align:left'>Player</th>
-                        <th>Goals</th>
-                        <th>Appearances</th>
-                        <th>Average Score (%)</th>
-                    </tr>
-                  </thead>
-                  <tbody>";
-				  $rank = 1;
-				 foreach ($allPlayers as $index => $player):{
-					echo "
-					<tr>
-						<td>{$rank}</td>
-						<td>{$player['name']}</td>
-						<td>{$player['team']}</td>
-						<td>{$player['goals']}</td>
-						<td>{$player['appearances']}</td>
-						<td>".number_format($player['score'], 2)."</td>
-					</tr>";
-
-				echo "</tbody></table>";
-			}?>
-</div>
 </body>
 <footer class="footer center" style="background-color: #929fba">
             <?php include(__DIR__.'/../includes/footer.php'); ?>
