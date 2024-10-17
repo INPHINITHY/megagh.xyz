@@ -73,10 +73,27 @@
         }
 
         // Save updated player stats back to the JSON file
-        file_put_contents($playerStatsFile, json_encode($playerStats));
-
-        echo "<h3>Scores Updated! {$player1} vs {$player2}.</h3>";
+        $jsonData = json_encode($playerStats, JSON_PRETTY_PRINT);
+        if ($jsonData === false) {
+            echo "JSON encoding error: " . json_last_error_msg();
+        } else {
+            file_put_contents($playerStatsFile, $jsonData);
+            $updatedData = json_decode(file_get_contents($playerStatsFile), true);
+            echo "<pre>";
+            print_r($updatedData);  // Check if the file has the correct updated data
+            echo "</pre>";
+        }
     }
+    $file = fopen($playerStatsFile, 'w');
+    if (flock($file, LOCK_EX)) {  // Acquire an exclusive lock
+        fwrite($file, $jsonData);
+        flock($file, LOCK_UN);    // Release the lock
+    } else {
+        echo "Could not lock the file for writing.";
+    }
+    fclose($file);
+
+        
 
     // Handle team and player selection for the "vs" matchup
     if (!empty($team1) && !empty($team2)) {
