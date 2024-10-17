@@ -19,6 +19,10 @@
 </style>
 <body class="body-light">
     <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    
     // File path to the player stats JSON
     $playerStatsFile =$_SERVER['DOCUMENT_ROOT'].'/pages/clans/player_stats.json';
 
@@ -27,6 +31,12 @@
         echo "<h2>Player stats file not found.</h2>";
         exit;
     }
+    if (file_put_contents($playerStatsFile, json_encode($playerStats, JSON_PRETTY_PRINT)) === false) {
+        echo "<h2>Error writing to player stats file.</h2>";
+    } else {
+        echo "<h3>Scores Updated!</h3>";
+    }
+    
 
     // Load and decode the player stats data
     $playerStats = json_decode(file_get_contents($playerStatsFile), true);
