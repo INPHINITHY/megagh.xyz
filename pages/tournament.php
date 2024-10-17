@@ -2,7 +2,7 @@
 // tournament_page.php
 
 // Load the scores from the JSON file
-$filename = __DIR__.'/record-management/results.json';
+$filename =$_SERVER['DOCUMENT_ROOT'] .'/pages/record-management/results.json';
 if (file_exists($filename)) {
     $scores = json_decode(file_get_contents($filename), true);
 } else {

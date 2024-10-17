@@ -18,7 +18,7 @@ $team2_win = $_POST['team2_win'] ?? 0;
 $team2_draw = $_POST['team2_draw'] ?? 0;
 
 // Load existing scores data from the JSON file
-$filename = 'results.json';
+$filename = './results.json';
 if (file_exists($filename)) {
     $scores = json_decode(file_get_contents($filename), true);
 } else {

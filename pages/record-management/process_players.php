@@ -20,7 +20,7 @@
 <body class="body-light">
     <?php
     // File path to the player stats JSON
-    $playerStatsFile = __DIR__ . '/../clans/player_stats.json';
+    $playerStatsFile =$_SERVER['DOCUMENT_ROOT'].'/pages/clans/player_stats.json';
 
     // Check if the player stats file exists
     if (!file_exists($playerStatsFile)) {

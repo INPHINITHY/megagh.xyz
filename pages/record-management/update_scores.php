@@ -26,7 +26,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
 <body class='resbody'>
     <h2 class="center">Record Match Results</h2>
     <p class="center">Each must be recorded seperately not at once like GnT vs Panda</p>
-    <form id='scoreform' method="POST" action="process_match.php" class="match-form">
+    <form id='scoreform' method="POST" action="./process_match.php" class="match-form">
         <div class="grid-three-columns" style="place-items:center">
         <div class='linear-card'>
         <div class="grid-four-columns" style="place-items:center">

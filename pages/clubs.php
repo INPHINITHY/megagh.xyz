@@ -35,7 +35,7 @@ echo "<h2 class='center'>Division Rankings</h2>";
                   <tbody>";
 
             // Load all player stats
-            $playerStatsFile = __DIR__ . '/clans/player_stats.json';
+            $playerStatsFile = $_SERVER['DOCUMENT_ROOT']. '/pages/clans/player_stats.json';
             $allPlayers = [];
 
             if (file_exists($playerStatsFile)) {
