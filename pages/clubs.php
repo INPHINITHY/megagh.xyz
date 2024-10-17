@@ -89,7 +89,7 @@ echo "<h2 class='center'>Division Rankings</h2>";
 				<ul>
 					<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
 					<li><a href="" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
-					<li><a href="./clans/black-mamba.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
+					<li><a href="./clans/Black Mamba.php" title="players"><i class="bi bi-person-rolodex"></i></a></li>
 				</ul>
 			</div>
 			<div class="linear-card epg">

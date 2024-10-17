@@ -5,13 +5,19 @@
     <title>WELCOME</title> 
 </head>
 <style>
-    
+    .grid-two-columns{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    @media only screen and (max-width:720px){
+        .linear-card:hover{
+		transform: scale(1);
+	}
+
+    }
 </style>
 <body class="body-light">
-    <header class="header">
-        <?php include('./../../includes/nav.php'); ?>
-    </header>
-
     <?php
     // File path to the player stats JSON
     $playerStatsFile = __DIR__ . '/../clans/player_stats.json';
@@ -73,8 +79,11 @@
     ?>
 
     <!-- Form to select teams -->
-    <h2>Select Teams for Matchup</h2>
+    <h2 class="center">SELECT THE CLUBS</h2>
     <form method="post" action="">
+    <div class='linear-card'>
+    <div class="grid-two-columns" style="place-items:center">
+        <div>
         <label for="team1">Select Team 1:</label>
         <select name="team1" id="team1" required onchange="this.form.submit()">
             <option value="">-- Select Team 1 --</option>
@@ -84,7 +93,8 @@
                 </option>
             <?php endforeach; ?>
         </select>
-
+        </div>
+        <div>
         <label for="team2">Select Team 2:</label>
         <select name="team2" id="team2" required onchange="this.form.submit()">
             <option value="">-- Select Team 2 --</option>
@@ -94,49 +104,68 @@
                 </option>
             <?php endforeach; ?>
         </select>
+        </div>
+        </div>
+        </div>
+
     </form>
 
     <?php if (!empty($team1) && !empty($team2)): ?>
-        <!-- Form to select players for the VS match -->
-        <h2>Select Players for VS Match</h2>
-        <form method="post" action="">
-            <input type="hidden" name="team1" value="<?php echo htmlspecialchars($team1); ?>">
-            <input type="hidden" name="team2" value="<?php echo htmlspecialchars($team2); ?>">
+    <!-- Form to select players for the VS match -->
+    <h2 class="center">PLAYER GOALS</h2>
+<form method="post" action="">
+<button type="submit" name="submit_scores">Submit Scores</button>
+    <input type="hidden" name="team1" value="<?php echo htmlspecialchars($team1); ?>">
+    <input type="hidden" name="team2" value="<?php echo htmlspecialchars($team2); ?>">
 
-            <label for="player1"><?php echo htmlspecialchars($team1); ?> Player:</label>
-            <select name="player1" id="player1" required>
-                <option value="">-- Select Player --</option>
-                <?php foreach ($playersTeam1 as $player): ?>
-                    <option value="<?php echo htmlspecialchars($player['player_name']); ?>" <?php echo ($player1 === $player['player_name']) ? 'selected' : ''; ?>>
-                        <?php echo htmlspecialchars($player['player_name']); ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
+    <?php for ($i = 1; $i <= 5; $i++): ?>
+        <div class='linear-card'>
+        <h3 class="center">Match <?php echo $i; ?></h3>
 
-            <label for="player2"><?php echo htmlspecialchars($team2); ?> Player:</label>
-            <select name="player2" id="player2" required>
-                <option value="">-- Select Player --</option>
-                <?php foreach ($playersTeam2 as $player): ?>
-                    <option value="<?php echo htmlspecialchars($player['player_name']); ?>" <?php echo ($player2 === $player['player_name']) ? 'selected' : ''; ?>>
-                        <?php echo htmlspecialchars($player['player_name']); ?>
-                    </option>
-                <?php endforeach; ?>
-            </select>
+        <!-- Check for previously submitted players -->
+        <?php
+            $selectedPlayer1 = isset($_POST['player1_' . $i]) ? $_POST['player1_' . $i] : '';
+            $selectedPlayer2 = isset($_POST['player2_' . $i]) ? $_POST['player2_' . $i] : '';
+        ?>
+        <div class="grid-two-columns" style="place-items:center">
+            <div>
+                <label for="player1_<?php echo $i; ?>"><?php echo htmlspecialchars($team1); ?> Player:</label>
+                <select name="player1_<?php echo $i; ?>" id="player1_<?php echo $i; ?>" required>
+                    <option value="">-- Select Player --</option>
+                    <?php foreach ($playersTeam1 as $player): ?>
+                        <option value="<?php echo htmlspecialchars($player['player_name']); ?>" 
+                            <?php echo ($selectedPlayer1 === $player['player_name']) ? 'selected' : ''; ?>>
+                            <?php echo htmlspecialchars($player['player_name']); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
 
-            <!-- Input scores for both players -->
-            <h3>Input Scores for the Matchup</h3>
-            <label for="score1"><?php echo htmlspecialchars($player1); ?>'s Score:</label>
-            <input type="number" name="score1" id="score1" required>
+                <label for="score1_<?php echo $i; ?>"><?php echo htmlspecialchars($selectedPlayer1); ?></label>
+                <input type="number" name="score1_<?php echo $i; ?>" id="score1_<?php echo $i; ?>" required>
+            </div>
 
-            <label for="score2"><?php echo htmlspecialchars($player2); ?>'s Score:</label>
-            <input type="number" name="score2" id="score2" required>
+            <div>
+                <label for="player2_<?php echo $i; ?>"><?php echo htmlspecialchars($team2); ?> Player:</label>
+                    <select name="player2_<?php echo $i; ?>" id="player2_<?php echo $i; ?>" required>
+                        <option value="">-- Select Player --</option>
+                        <?php foreach ($playersTeam2 as $player): ?>
+                            <option value="<?php echo htmlspecialchars($player['player_name']); ?>" 
+                                <?php echo ($selectedPlayer2 === $player['player_name']) ? 'selected' : ''; ?>>
+                                <?php echo htmlspecialchars($player['player_name']); ?>
+                            </option>
+                        <?php endforeach; ?>
+                    </select>
+                <label for="score2_<?php echo $i; ?>"><?php echo htmlspecialchars($selectedPlayer2); ?></label>
+                <input type="number" name="score2_<?php echo $i; ?>" id="score2_<?php echo $i; ?>" required>
+            </div>
+        </div>
 
-            <button type="submit" name="submit_scores">Submit Scores</button>
-        </form>
-    <?php endif; ?>
+        <!-- Input scores for both players -->
+</div>
+        <hr>
+    <?php endfor; ?>
+</form>
 
-    <footer class="footer" style="background-color: #929fba">
-        <?php include('./../../includes/footer.php'); ?>
-    </footer>
+<?php endif; ?>
 </body>
 </html>

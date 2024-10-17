@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <?php include('./../../includes/links.php'); ?>
-    <title>IMS</title> 
+    <title>Black Mamba</title> 
 </head>
 <body class="body-light">
     <header class="header">
@@ -11,7 +11,7 @@
     
     <?php
     // Load player stats data for the club
-    $team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'Immortal Souls of eSports';// Default team if not provided
+    $team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'Black Mamba'; // Default team if not provided
 
     $playerStatsFile = __DIR__ . '/player_stats.json';
     $minAppearances = 5; // Set minimum appearances required
@@ -25,7 +25,7 @@
         if (isset($playerStats['teams'][$team])) {
             $players = $playerStats['teams'][$team]['players'];
     
-            // Filter players based on minimum appearances for qualified players
+            // Filter players based on minimum appearances for qualifiedplayers
             $qualifiedPlayers = array_filter($players, function($player) use ($minAppearances) {
                 return $player['appearances'] >= $minAppearances; // Only include players meeting the threshold
             });

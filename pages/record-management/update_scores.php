@@ -73,5 +73,6 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
         </div>
         </div>
     </form>
+    <?php include('./process_players.php') ?>
 </body>
 </html>

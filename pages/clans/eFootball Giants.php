@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <?php include('./../../includes/links.php'); ?>
-    <title>WELCOME</title> 
+    <title>GIANTS</title> 
 </head>
 <body class="body-light">
     <header class="header">
@@ -13,13 +13,13 @@
     // Load player stats data for the club
     $team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'eFootball Giants'; // Default team if not provided
 
-    $playerStatsFile = __DIR__ . '/player_stats.json';
-    $minAppearances = 0; // Set minimum appearances required
+    $playerStatFile = __DIR__ . '/player_stats.json';
+    $minAppearances = 5; // Set minimum appearances required
 
     // Check if the player stats file exists
-    if (file_exists($playerStatsFile)) {
+    if (file_exists($playerStatFile)) {
         // Read and decode the JSON file
-        $playerStats = json_decode(file_get_contents($playerStatsFile), true);
+        $playerStats = json_decode(file_get_contents($playerStatFile), true);
         
         // Check if the specified team exists in the stats
         if (isset($playerStats['teams'][$team])) {

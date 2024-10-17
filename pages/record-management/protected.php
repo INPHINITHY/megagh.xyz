@@ -23,7 +23,8 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     <h1>Welcome to the Admin Panel</h1>
     <p>This is where you can edit the content for authorized users.</p>
     <ul>
-        <button><li><a href="/pages/record-management/update_scores.php">Enter scores</a></li></button>
+        <button><li><a href="/pages/record-management/update_scores.php">Enter Club scores</a></li></button>
+        <button><li><a href="/pages/record-management/process_players.php">Enter Player scores</a></li></button>
         <button><li><a href="logout.php">Logout</a></li></button>
 
     </ul>
