@@ -258,33 +258,33 @@ echo "<h2 class='center'>Division Rankings</h2>";
             </form>
     	</div>
 	</div>
-	<table style="border-collapse: separate;">
-<h2 class="center">Ranks</h2>
-			<thead>
-			<tr style="border:none">
-					<th>Rank</th>
-					<th>Player</th>
-					<th>Team</th>
-					<th>Goals</th>
-					<th>Appearances</th>
-					<th>Score</th>
-				</tr>
-			</thead>
-			<tbody>
-				<?php foreach ($allPlayers as $index => $player): ?>
+	<?php
+echo "<h2 class='center'>Overall Rankings</h2>";
+            echo "<table  style='width: 100%; border-collapse: collapse;'>";
+            echo "<thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th style='text-align:left'>Player</th>
+                        <th>Goals</th>
+                        <th>Appearances</th>
+                        <th>Average Score (%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>";
+				  $rank = 1;
+				 foreach ($allPlayers as $index => $player):{
+					echo "
 					<tr>
-						<td><?php echo $index + 1; ?></td>
-						<td><?php echo $player['name']; ?></td>
-						<td><?php echo $player['team']; ?></td>
-						<td><?php echo $player['goals']; ?></td>
-						<td><?php echo $player['appearances']; ?></td>
-						<td><?php echo number_format($player['score'], 2); ?></td>
-					</tr>
-					
-				<?php endforeach; ?>
-			</tbody>
-		</table>
-	</div>
+						<td>{$rank}</td>
+						<td>{$player['name']}</td>
+						<td>{$player['team']}</td>
+						<td>{$player['goals']}</td>
+						<td>{$player['appearances']}</td>
+						<td>".number_format($player['score'], 2)."</td>
+					</tr>";
+
+				echo "</tbody></table>";
+			}?>
 </div>
 </body>
 <footer class="footer center" style="background-color: #929fba">

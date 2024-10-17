@@ -29,7 +29,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     <form id='scoreform' method="POST" action="process_match.php" class="match-form">
         <div class="grid-three-columns" style="place-items:center">
         <div class='linear-card'>
-        <div class="grid-two-columns" style="place-items:center">
+        <div class="grid-four-columns" style="place-items:center">
             <div>
                 <label for="team1"><p class="form-text">Home</p></label>
                 <select name="team1" id="team1" required>
@@ -44,14 +44,22 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
                 </select>
             </div>
             <div>
-                <label for="team1_score"><p class="form-text">Home Goals</p></label>
+                <label for="team1_score"><p class="form-text">Goals</p></label>
                 <input type="number" name="team1_score" id="team1_score" required min="0">
+            </div>
+            <div>
+                <label for="team1_win"><p class="form-text">Wins</p></label>
+                <input type="number" name="team1_win" id="team1_win" required min="0">
+            </div>
+            <div>
+                <label for="team1_draw"><p class="form-text">Draws</p></label>
+                <input type="number" name="team1_draw" id="team1_draw" required min="0">
             </div>
         </div>
         </div>
         <div><button type="submit">Submit Match</button></div>
         <div class='linear-card'>
-        <div class="grid-two-columns">
+        <div class="grid-fpur-columns">
             <div>
                 <label for="team2"><p class="form-text">Away</p></label>
                 <select name="team2" id="team2" required>
@@ -66,13 +74,23 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
                 </select>
             </div>
             <div>
-                 <label for="team2_score"><p class="form-text">Away Goals</p></label>
+                 <label for="team2_score"><p class="form-text">Goals</p></label>
                  <input type="number" name="team2_score" id="team2_score" required min="0">
+            </div>
+            <div>
+                <label for="team2_win"><p class="form-text">Wins</p></label>
+                <input type="number" name="team2_win" id="team2_win" required min="0">
+            </div>
+            <div>
+                <label for="team2_draw"><p class="form-text">Draws</p></label>
+                <input type="number" name="team2_draw" id="team2_draw" required min="0">
             </div>
         </div>
         </div>
         </div>
     </form>
-    <?php include('./process_players.php') ?>
-</body>
+    <div><p>ignore if you are inly recording for teams</p>
+         <?php include('./process_players.php') ?>
+    </div>
+   </body>
 </html>
