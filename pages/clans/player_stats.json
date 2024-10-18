@@ -159,16 +159,8 @@
           "gd": 0
         },
         {
-          "player_name": "Mohammed",
+          "player_name": "Mohammed Sall",
           "img": "mohammed",
-          "goals": 0,
-          "appearances": 0,
-          "scores": [],
-          "gd": 0
-        },
-        {
-          "player_name": "Sall",
-          "img": "sall",
           "goals": 0,
           "appearances": 0,
           "scores": [],
@@ -223,16 +215,32 @@
           "gd": 0
         },
         {
-          "player_name": "Astate",
-          "img": "astate",
+          "player_name": "Astate Nickel",
+          "img": "astate-nickel",
           "goals": 0,
           "appearances": 0,
           "scores": [],
           "gd": 0
         },
         {
-          "player_name": "Nickel",
-          "img": "nickel",
+          "player_name": "Desire Daniel",
+          "img": "desire-daniel",
+          "goals": 0,
+          "appearances": 0,
+          "scores": [],
+          "gd": 0
+        },
+        {
+          "player_name": "Le Riche",
+          "img": "le riche",
+          "goals": 0,
+          "appearances": 0,
+          "scores": [],
+          "gd": 0
+        },
+        {
+          "player_name": "Alain",
+          "img": "alian",
           "goals": 0,
           "appearances": 0,
           "scores": [],
@@ -243,7 +251,15 @@
     "Black Mamba": {
       "players": [
         {
-          "player_name": "",
+          "player_name": "Mr. Nobody",
+          "img": "mr-nobody",
+          "goals": 0,
+          "appearances": 0,
+          "scores": [],
+          "gd": 0
+        },
+        {
+          "player_name": "Marce",
           "img": "",
           "goals": 0,
           "appearances": 0,
@@ -251,15 +267,7 @@
           "gd": 0
         },
         {
-          "player_name": "",
-          "img": "",
-          "goals": 0,
-          "appearances": 0,
-          "scores": [],
-          "gd": 0
-        },
-        {
-          "player_name": "",
+          "player_name": "Represent",
           "img": "",
           "goals": 0,
           "appearances": 0,
