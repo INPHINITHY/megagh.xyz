@@ -39,6 +39,16 @@ $divisionTwoTeams = [
 <head>
     <?php include(__DIR__ . '/../includes/links.php'); ?>
     <title>TOURNAMENTS</title>
+    <style>
+        
+        @media only screen and (max-width:720px){
+            .card-section {
+            margin: 20;
+            padding: 5px;
+        }
+        }
+    </style>
+    </style>
 </head>
 <body>
     <header class="header">
