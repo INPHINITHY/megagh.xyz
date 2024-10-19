@@ -5,11 +5,6 @@
     <title>WELCOME</title> 
 </head>
 <style>
-    .grid-two-columns{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
     @media only screen and (max-width:720px){
         .linear-card:hover{
 		transform: scale(1);
