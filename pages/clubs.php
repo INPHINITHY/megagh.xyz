@@ -39,8 +39,6 @@ echo "<h2 class='center'>Division Rankings</h2>";
                         <th>GD</th>
                         <th>MP</th>
                         <th>W</th>
-						<th>D</th>
-						<th>L</th>
 						<th>P</th>
 						<th>Rate</th>
                     </tr>
@@ -89,9 +87,7 @@ echo "<h2 class='center'>Division Rankings</h2>";
 						</td>
 						<td>{$player['gd']}</td>
 						<td class='hide'>{$player['appearances']}</td>
-						<td>{$player['wins']}</td> 
-						<td>{$player['draws']}</td> 
-						<td>{$player['losses']}</td> 
+						<td>{$player['wins']}</td>  
 						<td>{$player['total_points']}</td> 
 						<td>" . number_format($player['rating'], 2) . "</td>
 					</tr>
