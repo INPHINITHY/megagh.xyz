@@ -21,9 +21,19 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
         .grid-three-columns{
             gap:20px
         }
+        .card-section{
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+        }
     </style>
 </head>
+
 <body class='resbody'>
+<header class="header">
+        <?php include('./../../includes/nav.php'); ?>
+</header>
+    <div class="card-section">
     <h2 class="center">Record Match Results</h2>
     <p class="center">Each must be recorded seperately not at once like GnT vs Panda</p>
     <form id='scoreform' method="POST" action="./process_match.php" class="match-form">
@@ -89,8 +99,6 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
         </div>
         </div>
     </form>
-    <div><p>ignore if you are inly recording for teams</p>
-         <?php include('./process_players.php') ?>
     </div>
    </body>
 </html>

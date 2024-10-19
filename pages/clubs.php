@@ -20,15 +20,20 @@
 		<?php include(__DIR__. '/../includes/nav.php'); ?>
 	</header>
 <?php
+echo"<div class='card-section'>";
 echo "<h2 class='center'>Division Rankings</h2>";
             echo "<table  style='width: 100%; border-collapse: collapse;'>";
             echo "<thead>
                     <tr>
                         <th>Rank</th>
                         <th style='text-align:left'>Player</th>
-                        <th>Goals</th>
-                        <th>Appearances</th>
-                        <th>Average Score (%)</th>
+                        <th>GD</th>
+                        <th>MP</th>
+                        <th>W</th>
+						<th>D</th>
+						<th>L</th>
+						<th>Points</th>
+						<th>Ratings</th>
                     </tr>
                   </thead>
                   <tbody>";
@@ -46,16 +51,20 @@ echo "<h2 class='center'>Division Rankings</h2>";
                         $allPlayers[] = [
                             'name' => $stats['player_name'],
                             'team' => $team,
-                            'goals' => $stats['goals'],
+                            'gd' => $stats['gd'],
                             'appearances' => $stats['appearances'],
-                            'score' => $stats['goals'] / max($stats['appearances'], 1) // Calculate score
+							'wins' => $stats['wins'],
+							'draws' => $stats['draws'],
+							'losses' => $stats['losses'],
+							'total_points' => $stats['total_points']?? 0,
+							'rating' => $stat['rating'] ?? 0
                         ];
                     }
                 }
 
                 // Sort all players by score (highest first)
                 usort($allPlayers, function($a, $b) {
-                    return $b['score'] <=> $a['score']; // Sort by descending score
+                    return $b['rating'] <=> $a['rating']; // Sort by descending score
                 });
 
                 // Get the top players (for example, the top 10)
@@ -65,17 +74,23 @@ echo "<h2 class='center'>Division Rankings</h2>";
                 $rank = 1;
                 foreach ($topPlayers as $player) {
                 echo "<tr>
-                        <td class='td-rank'>{$rank}</td>
-                        <td class='team-cell'>
-							<span class='team-name'>{$player['name']}</span>
-                        </td>
-                        <td>{$player['goals']}</td>
-                        <td>{$player['appearances']}</td>
-                        <td>" . number_format($player['score'], 2) . "</td>
-                    </tr>";
+						<td class='td-rank'>{$rank}</td>
+						<td class='team-cell'>
+							<span class='team-name'>{$player['name']}</span> 
+						</td>
+						<td>{$player['gd']}</td>
+						<td class='hide'>{$player['appearances']}</td>
+						<td>{$player['wins']}</td> 
+						<td>{$player['draws']}</td> 
+						<td>{$player['losses']}</td> 
+						<td>{$player['total_points']}</td> 
+						<td>" . number_format($player['rating'], 2) . "</td>
+					</tr>
+					";
                     $rank++;
                 }
 				echo "</tbody></table>";
+				echo"</div>";
 			} else {
 				echo "<h2>Team '{$team}' not found.</h2>";
 			}

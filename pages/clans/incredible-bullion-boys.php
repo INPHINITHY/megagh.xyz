@@ -8,58 +8,90 @@
     <header class="header">
         <?php include('./../../includes/nav.php'); ?>
     </header>
-    
+    <style>
+        @media only screen and (max-width:720px){
+            .grid-three-columns{
+                grid-template-columns:1fr 1fr 1fr;
+                gap:20px;
+                place-items:center;
+                display: flex;
+            }
+        }
+    </style>
     <?php
     // Load player stats data for the club
     $team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'Incredible Bullion Boys'; // Default team if not provided
 
-    $playerStatsFile = __DIR__ . '/player_stats.json';
+    $playerStatFile = __DIR__ . '/player_stats.json';
     $minAppearances = 5; // Set minimum appearances required
 
     // Check if the player stats file exists
-    if (file_exists($playerStatsFile)) {
+    if (file_exists($playerStatFile)) {
         // Read and decode the JSON file
-        $playerStats = json_decode(file_get_contents($playerStatsFile), true);
+        $playerStats = json_decode(file_get_contents($playerStatFile), true);
         
         // Check if the specified team exists in the stats
         if (isset($playerStats['teams'][$team])) {
             $players = $playerStats['teams'][$team]['players'];
     
-            // Filter players based on minimum appearances for qualified players
-            $qualifiedPlayers = array_filter($players, function($player) use ($minAppearances) {
-                return $player['appearances'] >= $minAppearances; // Only include players meeting the threshold
-            });
+            // Prepare an array for qualified players with default values
+            $qualifiedPlayers = [];
     
-            // Sort qualified players by their average score (goals per appearance)
+            foreach ($players as $player) {
+                // Set default values if not present
+                $player['wins'] = $player['wins'] ?? 0;
+                $player['draws'] = $player['draws'] ?? 0;
+                $player['losses'] = $player['losses'] ?? 0;
+                $player['gd'] = $player['gd'] ?? 0;
+                $player['total_points'] = $player['total_points'] ?? 0;
+                $player['rating'] = $player['rating'] ?? 0;
+                $player['goals'] = $player['goals'] ?? 0;
+                $player['appearances'] = $player['appearances'] ?? 0;
+
+                // Only include players meeting the threshold
+                if ($player['appearances'] >= $minAppearances) {
+                    $qualifiedPlayers[] = $player; // Add player to qualified players
+                }
+            }
+    
+            // Sort qualified players by their rating
             usort($qualifiedPlayers, function($a, $b) {
-                $scoreA = $a['appearances'] > 0 ? $a['goals'] / $a['appearances'] : 0; // Avoid division by zero
-                $scoreB = $b['appearances'] > 0 ? $b['goals'] / $b['appearances'] : 0;
-                return $scoreB <=> $scoreA; // Sort by descending score
+                return $b['rating'] <=> $a['rating']; // Sort by descending rating
             });
     
             // Output sorted players in a table format
             echo "<h2 class='center'>Players for {$team}</h2>";
-            echo "<table  style='width: 100%; border-collapse: collapse;'>";
+            echo "<table style='width: 100%; border-collapse: collapse;'>";
             echo "<thead>
                     <tr>
-                        <th>Rank</th>
-                        <th style='text-align:left'>Player Name</th>
+                        <th>#</th>
+                        <th style='text-align:left'>Player</th>
                         <th>Goals</th>
-                        <th>Appearances</th>
-                        <th>Average Score (%)</th>
+                        <th>MP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GD</th>
+                        <th>PPG</th>
+                        <th>Rating</th>
                     </tr>
                   </thead>
                   <tbody>";
     
             $rank = 1;
             foreach ($qualifiedPlayers as $player) {
-                $avgScore = $player['appearances'] > 0 ? round($player['goals'] / $player['appearances'] * 100, 2) : 0; // Average score as a percentage
+                $pointsPerGame = $player['total_points'] / max($player['appearances'], 1); // Avoid division by zero
                 echo "<tr>
                         <td class='td-rank'>{$rank}</td>
                         <td class='team-cell' style='width:170px'>{$player['player_name']}</td>
                         <td>{$player['goals']}</td>
                         <td>{$player['appearances']}</td>
-                        <td>" . number_format($avgScore, 2) . "</td>
+                        <td>{$player['wins']}</td>
+                        <td>{$player['draws']}</td>
+                        <td>{$player['losses']}</td>
+                        <td>{$player['gd']}</td>
+                        <td>" . number_format($pointsPerGame, 2) . "</td>
+                        <td>" . number_format($player['rating'], 2) . "</td>
                       </tr>";
                 $rank++;
             }
@@ -70,26 +102,40 @@
         }
     } else {
         echo "<h2>Player stats file not found.</h2>";
-    }?>
+    }
+    ?>
     
-
     <div class="player-card-grid">
-        <?php foreach ($players as $player): ?>  <!-- Use all players for card display -->
-            <div class="player-card">
-                <img src="/assets/images/players/<?php echo $player['img']; ?>.jpg" alt="<?php echo $player['player_name']; ?>" />
-                <h3><?php echo $player['player_name']; ?></h3>
-                <ul>
-                    <li>Goal  <?php echo $player['goals']; ?></li>
-                    <li>GD  <?php echo $player['gd']; ?></li>
-                    <li>Apps  <?php echo $player['appearances']; ?></li>
-                    <li>Avg  <?php echo number_format($player['goals'] / max($player['appearances'], 1), 2); ?></li>
-                </ul>
-            </div>
-        <?php endforeach; ?>
-    </div>
+    <?php foreach ($players as $player): ?>  <!-- Use all players for card display -->
+        <?php
+            // Ensure all data is set with defaults for the player
+            $player['goals'] = $player['goals'] ?? 0;
+            $player['gd'] = $player['gd'] ?? 0;
+            $player['appearances'] = $player['appearances'] ?? 0;
+            $player['wins'] = $player['wins'] ?? 0;
+            $player['total_points'] = $player['total_points'] ?? 0;
+            $player['rating'] = $player['rating'] ?? 0;
+        ?>
+        <div class="player-card">
+            <img src="/assets/images/players/<?php print $player['img']; ?>.jpg" alt="<?php print $player['player_name']; ?>" />
+            <h3><?php print $player['player_name']; ?></h3>
+                <div class="grid-three-columns">
+                    <div>Goals   <?php print $player['goals']; ?></div>
+                    <div>GD   <?php print $player['gd']; ?></div>
+                    <div>Matches   <?php print $player['appearances']; ?></div>
+                </div>
+                <div class="grid-three-columns">
+                    <div>Win   <?php print $player['wins']; ?></div>
+                    <div>Point   <?php print $player['total_points']; ?></div>
+                    <div>Rating   <?php print number_format($player['rating'], 2); ?></div>
+                </div>
+        </div>
+    <?php endforeach; ?>
+</div>
 
     <footer class="footer" style="background-color: #929fba">
         <?php include('./../../includes/footer.php'); ?>
     </footer>
 </body>
 </html>
+
