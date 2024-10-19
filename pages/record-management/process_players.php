@@ -10,14 +10,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    .card-section{
-            margin-top:100px;
-        }
     @media only screen and (max-width:720px){
         .linear-card:hover{
 		transform: scale(1);
 	}
-
     }
 </style>
 <body class="body-light">
@@ -233,7 +229,4 @@
 <?php endif; ?>
 </div>
 </body>
-<footer class="footer" style="background-color: #929fba">
-        <?php include('./../../includes/footer.php'); ?>
-</footer>
 </html>
