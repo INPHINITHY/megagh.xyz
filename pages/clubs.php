@@ -19,6 +19,15 @@
 	<header class="header">
 		<?php include(__DIR__. '/../includes/nav.php'); ?>
 	</header>
+	<style>
+        
+        @media only screen and (max-width:720px){
+            .card-section {
+            margin: 20;
+            padding: 5px;
+        }
+        }
+    </style>
 <?php
 echo"<div class='card-section'>";
 echo "<h2 class='center'>Division Rankings</h2>";
@@ -32,8 +41,8 @@ echo "<h2 class='center'>Division Rankings</h2>";
                         <th>W</th>
 						<th>D</th>
 						<th>L</th>
-						<th>Points</th>
-						<th>Ratings</th>
+						<th>P</th>
+						<th>Rate</th>
                     </tr>
                   </thead>
                   <tbody>";
