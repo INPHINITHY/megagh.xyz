@@ -1,0 +1,171 @@
+{
+    "divisionOneTeams": [
+        {
+            "name": "Les Panthers",
+            "short-hand": "LES",
+            "points": 8,
+            "wins": 0,
+            "draws": 1,
+            "loss": 0,
+            "gd": 0,
+            "ga": 1,
+            "gf": 1
+        },
+        {
+            "name": "eFootball Giants",
+            "short-hand": "GNT",
+            "points": 4,
+            "wins": 0,
+            "draws": 1,
+            "loss": 0,
+            "gd": 0,
+            "ga": 1,
+            "gf": 1
+        },
+        {
+            "name": "Immortal Souls of eSports",
+            "short-hand": "IMS",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Legendary Gamers Club",
+            "short-hand": "LGC",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Les Addicts Du Pes",
+            "short-hand": "LES",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Black Mamba",
+            "short-hand": "BM",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Vawulence Evolution Club",
+            "short-hand": "VEC",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        }
+    ],
+    "divisionTwoTeams": [
+        {
+            "name": "Wild Hunters",
+            "short-hand": "WH",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Ninja Bros",
+            "short-hand": "NB",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "MEC Galaxy Boys",
+            "short-hand": "MGB",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Nocturnal Terror Tribe",
+            "short-hand": "NTT",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Militant Boyz Clan",
+            "short-hand": "MBC",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Sports Boys Arena",
+            "short-hand": "SBA",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Majestic Wiz",
+            "short-hand": "WIZ",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        },
+        {
+            "name": "Elite Pro Gamers",
+            "short-hand": "EPG",
+            "points": 0,
+            "wins": 0,
+            "draws": 0,
+            "loss": 0,
+            "gd": 0,
+            "ga": 0,
+            "gf": 0
+        }
+    ]
+}

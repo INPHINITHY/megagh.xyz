@@ -4,15 +4,13 @@
 // Load the scores from the JSON file
 $filename =$_SERVER['DOCUMENT_ROOT'] .'/pages/record-management/results.json';
 if (file_exists($filename)) {
-    $scores = json_decode(file_get_contents($filename), true);
-} else {
-    $scores = [];
-}
+    $scores = json_decode(file_get_contents($filename), true);}
+
 
 // Define the teams to match your current HTML
 $divisionOneTeams = [
-    'Les Panthers':{"short-hand":["LES"]}
-    'eFootball Giants':{"short-hand":["GNT"]}
+    'Les Panthers',
+    'eFootball Giants',
     'eSports Panda',
     'Immortal Souls of eSports',
     'Legendary Gamers Club',
@@ -30,7 +28,6 @@ $divisionTwoTeams = [
     'MEC Galaxy Boys',
     'Ninja Bros',
     'Wild Hunters'
-
 ]
 
 ?>
@@ -53,8 +50,8 @@ $divisionTwoTeams = [
     <header class="header">
         <?php include('./../includes/nav.php'); ?>
     </header>
+<!-- DIVISION ONE TABLE -->
     <?php
-    
     echo"<div class='card-section'>";
     echo "<h2 class='center'>Division One</h2>";
             echo "<table  style='width: 100%; border-collapse: collapse;'>";
@@ -78,10 +75,18 @@ $divisionTwoTeams = [
 
                 // Loop through the teams and output the table rows
                 $rank = 1;
-                foreach ($divisionOneTeams as $team) {
-                    $teamData = $scores[$team] ?? ['points' => 0, 'wins' => 0, 'draws' => 0, 'losses' => 0, 'gd' => 0];
-
-                    // Assign different classes for points/rank styling
+                foreach ($scores['divisionOneTeams'] as $team) {
+                    $teamData = [
+                        'name' => $team['name'],
+                        'short_hand' => $team['short-hand'],
+                        'points' => $team['points'],
+                        'wins' => $team['wins'],
+                        'draws' => $team['draws'],
+                        'losses' => $team['loss'],
+                        'gd' => $team['gd']
+                    ];
+                
+                    // Assign classes for points/rank styling based on rank
                     $pointsClass = '';
                     if ($rank == 1) {
                         $pointsClass = 'fst';
@@ -95,9 +100,9 @@ $divisionTwoTeams = [
                     echo "<tr>
                         <td class='td-rank'>{$rank}</td>
                         <td class='team-cell'>
-                            <img src='/assets/images/clan-logos/" . strtolower(str_replace(' ', '-', $team)) . ".jpg' alt=''>
-                            <span class='team-name'>{$team}</span>
-                            <span class='team-name short'>" . strtoupper(substr($team, 0, 3)) . "</span>
+                            <img src='/assets/images/clan-logos/" . strtolower(str_replace(' ', '-', $teamData['name'])) . ".jpg' alt=''>
+                            <span class='team-name'>{$teamData['name'] }</span>
+                            <span class='team-name short'>{$teamData['short_hand']} </span>
                         </td>
                         <td class='td-points {$pointsClass}'>{$teamData['points']}</td>
                         <td>" . ($teamData['wins'] + $teamData['draws'] + $teamData['losses']) . "</td>
@@ -111,9 +116,11 @@ $divisionTwoTeams = [
                 echo "</tbody></table>";
                 echo "</div>";
                 ?>
-<?php
 
-echo "<div class='card-section'>";
+
+<!-- DIVISION Two TABLE -->
+<?php
+    echo"<div class='card-section'>";
     echo "<h2 class='center'>Division Two</h2>";
             echo "<table  style='width: 100%; border-collapse: collapse;'>";
             echo "<thead>
@@ -136,10 +143,18 @@ echo "<div class='card-section'>";
 
                 // Loop through the teams and output the table rows
                 $rank = 1;
-                foreach ($divisionTwoTeams as $team) {
-                    $teamData = $scores[$team] ?? ['points' => 0, 'wins' => 0, 'draws' => 0, 'losses' => 0, 'gd' => 0];
-
-                    // Assign different classes for points/rank styling
+                foreach ($scores['divisionTwoTeams'] as $team) {
+                    $teamData = [
+                        'name' => $team['name'],
+                        'short_hand' => $team['short-hand'],
+                        'points' => $team['points'],
+                        'wins' => $team['wins'],
+                        'draws' => $team['draws'],
+                        'losses' => $team['loss'],
+                        'gd' => $team['gd']
+                    ];
+                
+                    // Assign classes for points/rank styling based on rank
                     $pointsClass = '';
                     if ($rank == 1) {
                         $pointsClass = 'fst';
@@ -153,9 +168,9 @@ echo "<div class='card-section'>";
                     echo "<tr>
                         <td class='td-rank'>{$rank}</td>
                         <td class='team-cell'>
-                            <img src='/assets/images/clan-logos/" . strtolower(str_replace(' ', '-', $team)) . ".jpg' alt=''>
-                            <span class='team-name'>{$team}</span>
-                            <span class='team-name short'>" . strtoupper(substr($team, 0, 3)) . "</span>
+                            <img src='/assets/images/clan-logos/" . strtolower(str_replace(' ', '-', $teamData['name'])) . ".jpg' alt=''>
+                            <span class='team-name'>{$teamData['name'] }</span>
+                            <span class='team-name short'>{$teamData['short_hand']} </span>
                         </td>
                         <td class='td-points {$pointsClass}'>{$teamData['points']}</td>
                         <td>" . ($teamData['wins'] + $teamData['draws'] + $teamData['losses']) . "</td>
@@ -169,6 +184,7 @@ echo "<div class='card-section'>";
                 echo "</tbody></table>";
                 echo "</div>";
                 ?>
+
     <footer class="footer" style="background-color: #929fba">
         <?php include('./../includes/footer.php'); ?>
     </footer>
