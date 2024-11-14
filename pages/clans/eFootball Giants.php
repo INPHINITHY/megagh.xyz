@@ -118,7 +118,7 @@
             $player['rating'] = $player['rating'] ?? 0;
         ?>
         <div class="player-card">
-            <img src="/assets/images/players/<?php print $player['img']; ?>.jpg" alt="<?php print $player['player_name']; ?>" />
+            <img src="/assets/images/players/eFootball_giants/<?php print $player['img']; ?>.jpg" alt="<?php print $player['player_name']; ?>" />
             <h3><?php print $player['player_name']; ?></h3>
                 <div class="grid-three-columns">
                     <div>Goals   <?php print $player['goals']; ?></div>

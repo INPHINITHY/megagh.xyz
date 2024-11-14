@@ -48,7 +48,6 @@ $divisionTwoTeams = [
         }
         }
     </style>
-    </style>
 </head>
 <body>
     <header class="header">
