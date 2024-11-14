@@ -11,8 +11,8 @@ if (file_exists($filename)) {
 
 // Define the teams to match your current HTML
 $divisionOneTeams = [
-    'Les Panthers',
-    'eFootball Giants',
+    'Les Panthers':{"short-hand":["LES"]}
+    'eFootball Giants':{"short-hand":["GNT"]}
     'eSports Panda',
     'Immortal Souls of eSports',
     'Legendary Gamers Club',
