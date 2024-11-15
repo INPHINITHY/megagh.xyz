@@ -61,18 +61,19 @@
             });
     
             // Output sorted players in a table format
+            echo"<div class='card-section'>";
             echo "<h2 class='center'>Players for {$team}</h2>";
             echo "<table style='width: 100%; border-collapse: collapse;'>";
             echo "<thead>
                     <tr>
                         <th>#</th>
                         <th style='text-align:left'>Player</th>
-                        <th>Goals</th>
+                        <th class = 'hide'>Goals</th>
                         <th>MP</th>
-                        <th>W</th>
-                        <th>D</th>
-                        <th>L</th>
-                        <th>GD</th>
+                        <th class = 'hide'>W</th>
+                        <th class = 'hide'>D</th>
+                        <th class = 'hide'>L</th>
+                        <th class = 'hide'>GD</th>
                         <th>PPG</th>
                         <th>Rating</th>
                     </tr>
@@ -84,13 +85,13 @@
                 $pointsPerGame = $player['total_points'] / max($player['appearances'], 1); // Avoid division by zero
                 echo "<tr>
                         <td class='td-rank'>{$rank}</td>
-                        <td class='team-cell' style='width:170px'>{$player['player_name']}</td>
-                        <td>{$player['goals']}</td>
+                        <td class='team-cell' style='width:50px'>{$player['player_name']}</td>
+                        <td class = 'hide'>{$player['goals']}</td>
                         <td>{$player['appearances']}</td>
-                        <td>{$player['wins']}</td>
-                        <td>{$player['draws']}</td>
-                        <td>{$player['losses']}</td>
-                        <td>{$player['gd']}</td>
+                        <td class = 'hide'>{$player['wins']}</td>
+                        <td class = 'hide'>{$player['draws']}</td>
+                        <td class = 'hide'>{$player['losses']}</td>
+                        <td class = 'hide'>{$player['gd']}</td>
                         <td>" . number_format($pointsPerGame, 2) . "</td>
                         <td>" . number_format($player['rating'], 2) . "</td>
                       </tr>";
@@ -98,6 +99,7 @@
             }
     
             echo "</tbody></table>";
+            echo "</div>";
         } else {
             echo "<h2>Team '{$team}' not found.</h2>";
         }

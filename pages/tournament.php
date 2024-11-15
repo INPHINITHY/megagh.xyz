@@ -61,16 +61,18 @@ $divisionTwoTeams = [
                         <th style='text-align:left'>Team</th>
                         <th>P</th>
                         <th>MP</th>
-                        <th>W</th>
+                        <th >W</th>
                         <th>D</th>
-                        <th>L</th>
+                        <th >L</th>
                         <th>GD</th>
+                        <th class = 'hide'>GA</th>
+                        <th class = 'hide'>GF</th>
                 </tr>
             </thead>
             <tbody>";
                 // Sort teams by points (highest to lowest)
-                usort($divisionOneTeams, function($team1, $team2) use ($scores) {
-                    return ($scores[$team2]['points'] ?? 0) - ($scores[$team1]['points'] ?? 0);
+                usort($scores['divisionOneTeams'], function($team1, $team2) {
+                    return ($team2['points'] ?? 0) - ($team1['points'] ?? 0);
                 });
 
                 // Loop through the teams and output the table rows
@@ -83,7 +85,9 @@ $divisionTwoTeams = [
                         'wins' => $team['wins'],
                         'draws' => $team['draws'],
                         'losses' => $team['loss'],
-                        'gd' => $team['gd']
+                        'gd' => $team['gd'],
+                        'ga' => $team['ga'],
+                        'gf' => $team['gf']
                     ];
                 
                     // Assign classes for points/rank styling based on rank
@@ -106,10 +110,12 @@ $divisionTwoTeams = [
                         </td>
                         <td class='td-points {$pointsClass}'>{$teamData['points']}</td>
                         <td>" . ($teamData['wins'] + $teamData['draws'] + $teamData['losses']) . "</td>
-                        <td>{$teamData['wins']}</td>
-                        <td>{$teamData['draws']}</td>
-                        <td>{$teamData['losses']}</td>
+                        <td >{$teamData['wins']}</td>
+                        <td >{$teamData['draws']}</td>
+                        <td >{$teamData['losses']}</td>
                         <td>{$teamData['gd']}</td>
+                        <td class = 'hide'>{$teamData['ga']}</td>
+                        <td class = 'hide'>{$teamData['gf']}</td>
                     </tr>";
                     $rank++;
                 }
@@ -130,15 +136,17 @@ $divisionTwoTeams = [
                         <th>P</th>
                         <th>MP</th>
                         <th>W</th>
-                        <th>D</th>
-                        <th>L</th>
+                        <th class = 'hide'>D</th>
+                        <th class = 'hide'>L</th>
                         <th>GD</th>
+                        <th class = 'hide'>GA</th>
+                        <th class = 'hide'>GF</th>
                 </tr>
             </thead>
             <tbody>";
                 // Sort teams by points (highest to lowest)
-                usort($divisionTwoTeams, function($team1, $team2) use ($scores) {
-                    return ($scores[$team2]['points'] ?? 0) - ($scores[$team1]['points'] ?? 0);
+                usort($scores['divisionTwoTeams'], function($team1, $team2) {
+                    return ($team2['points'] ?? 0) - ($team1['points'] ?? 0);
                 });
 
                 // Loop through the teams and output the table rows
@@ -151,7 +159,9 @@ $divisionTwoTeams = [
                         'wins' => $team['wins'],
                         'draws' => $team['draws'],
                         'losses' => $team['loss'],
-                        'gd' => $team['gd']
+                        'gd' => $team['gd'],
+                        'ga' => $team['ga'],
+                        'gf' => $team['gf']
                     ];
                 
                     // Assign classes for points/rank styling based on rank
@@ -166,20 +176,22 @@ $divisionTwoTeams = [
 
                     // Output table row
                     echo "<tr>
-                        <td class='td-rank'>{$rank}</td>
-                        <td class='team-cell'>
-                            <img src='/assets/images/clan-logos/" . strtolower(str_replace(' ', '-', $teamData['name'])) . ".jpg' alt=''>
-                            <span class='team-name'>{$teamData['name'] }</span>
-                            <span class='team-name short'>{$teamData['short_hand']} </span>
-                        </td>
-                        <td class='td-points {$pointsClass}'>{$teamData['points']}</td>
-                        <td>" . ($teamData['wins'] + $teamData['draws'] + $teamData['losses']) . "</td>
-                        <td>{$teamData['wins']}</td>
-                        <td>{$teamData['draws']}</td>
-                        <td>{$teamData['losses']}</td>
-                        <td>{$teamData['gd']}</td>
-                    </tr>";
-                    $rank++;
+                    <td class='td-rank'>{$rank}</td>
+                    <td class='team-cell'>
+                        <img src='/assets/images/clan-logos/" . strtolower(str_replace(' ', '-', $teamData['name'])) . ".jpg' alt=''>
+                        <span class='team-name'>{$teamData['name'] }</span>
+                        <span class='team-name short'>{$teamData['short_hand']} </span>
+                    </td>
+                    <td class='td-points {$pointsClass}'>{$teamData['points']}</td>
+                    <td>" . ($teamData['wins'] + $teamData['draws'] + $teamData['losses']) . "</td>
+                    <td>{$teamData['wins']}</td>
+                    <td class = 'hide'>{$teamData['draws']}</td>
+                    <td class = 'hide'>{$teamData['losses']}</td>
+                    <td>{$teamData['gd']}</td>
+                    <td class = 'hide'>{$teamData['ga']}</td>
+                    <td class = 'hide'>{$teamData['gf']}</td>
+                </tr>";
+                $rank++;;
                 }
                 echo "</tbody></table>";
                 echo "</div>";

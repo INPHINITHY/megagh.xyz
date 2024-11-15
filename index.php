@@ -24,6 +24,40 @@
 			<p style="font-size:20px">Join the ultimate gaming experience</p>
 		 </div>
     </div>
+	<div class="container-lm">
+		<div class="grid-two-columns">
+			<div class=" imglinks">
+				<a href="index.php">
+					<img src="assets/images/index/Homeimg.jpg" alt="">
+				<p>Home</p>
+				</a>
+			</div>
+
+			<div class="imglinks">
+				<a href="pages/clubs.php">
+					<img src="assets/images/index/clubsimg.jpg" alt="">
+				<p>Clubs</p>
+				</a>
+			</div>
+        </div>
+			
+		<div class="grid-two-columns">
+			<div class=" imglinks">
+				<a href="pages/tournament.php">
+					<img src="assets/images/index/tours.avif" alt="">
+			          <p>Tournaments</p>
+				</a>
+			</div>
+
+			<div class="imglinks">
+				<a href="pages/aboutUs.php">
+					<img src="assets/images/index//about-logo.jpg"  alt="">
+					 <p>About us</P>
+				</a>
+			</div>
+		</div>
+    </div>
+	
 	<div class="card-section">
 			<h2>MISSION :</h2>
 				<p>MEGA's mission is to promote and support the efootball gaming community through competitions, advocacy, and social engagement as we strive to create a safe and inclusive space for efootball gamers of all backgrounds, skills and abilities, and to foster a culture of respect, sportsmanship, and creativity.
