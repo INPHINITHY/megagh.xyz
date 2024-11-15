@@ -23,8 +23,8 @@
     $team = isset($_GET['team']) ? htmlspecialchars($_GET['team']) : 'Legendary Gamers Clan'; // Default team if not provided
 
     $playerStatFile = __DIR__ . '/player_stats.json';
-    $minAppearances = 5; // Set minimum appearances required
-
+    $minAppearances = 0; // Set minimum appearances required
+    
     // Check if the player stats file exists
     if (file_exists($playerStatFile)) {
         // Read and decode the JSON file
@@ -47,7 +47,7 @@
                 $player['rating'] = $player['rating'] ?? 0;
                 $player['goals'] = $player['goals'] ?? 0;
                 $player['appearances'] = $player['appearances'] ?? 0;
-
+    
                 // Only include players meeting the threshold
                 if ($player['appearances'] >= $minAppearances) {
                     $qualifiedPlayers[] = $player; // Add player to qualified players
@@ -119,26 +119,30 @@
             $player['total_points'] = $player['total_points'] ?? 0;
             $player['rating'] = $player['rating'] ?? 0;
         ?>
-        <div class="player-card">
-            <img src="/assets/images/players/<?php print $player['img']; ?>.jpg" alt="<?php print $player['player_name']; ?>" />
-            <h3><?php print $player['player_name']; ?></h3>
-                <div class="grid-three-columns">
-                    <div>Goals   <?php print $player['goals']; ?></div>
-                    <div>GD   <?php print $player['gd']; ?></div>
-                    <div>Matches   <?php print $player['appearances']; ?></div>
-                </div>
-                <div class="grid-three-columns">
-                    <div>Win   <?php print $player['wins']; ?></div>
-                    <div>Point   <?php print $player['total_points']; ?></div>
-                    <div>Rating   <?php print number_format($player['rating'], 2); ?></div>
-                </div>
+    <div class="player-card-2"> 
+        <img class="img" src="/assets/images/players/les_addicts_du_pes/<?php print $player['img']; ?>.jpg" alt="<?php print $player['player_name']; ?>"/>
+        <div class="player-card-2-name">
+            <h2><?php print $player['player_name']; ?></h2>
         </div>
+            <div class="player-card-2-overview center">
+                <div class="grid-three-columns">
+                    <div>Goals<br><?php print $player['goals']; ?></div>
+                    <div>GD<br><?php print $player['gd']; ?></div>
+                    <div>Matches<br><?php print $player['appearances']; ?></div>
+                </div>
+                <div class="grid-three-columns">
+                    <div>Win<br><?php print $player['wins']; ?></div>
+                    <div>Point<br><?php print $player['total_points']; ?></div>
+                    <div>Rating<br><?php print number_format($player['rating'], 2); ?></div>
+                </div>
+            </div>
+    </div>
+    
     <?php endforeach; ?>
-</div>
-
+    </div>
+    
     <footer class="footer" style="background-color: #929fba">
         <?php include('./../../includes/footer.php'); ?>
     </footer>
-</body>
-</html>
-
+    </body>
+    </html>

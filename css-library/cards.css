@@ -328,6 +328,11 @@
 		margin: 5px;
 		padding: 0;
 	}
+  
+  .player-card-2-overview{
+    place-items: center;
+
+  }
 
 }
 
@@ -361,3 +366,85 @@
     transform: translateY(-10px);
 }
 
+
+
+/* an example bruh */
+/* <div class="profile-card-6"> 
+        <img class="img" src="/assets/images/players/les_addicts_du_pes/<?php print $player['img']; ?>.jpg" alt="<?php print $player['player_name']; ?>"/>
+        <div class="profile-name">
+            <h2><?php print $player['player_name']; ?></h2>
+        </div>
+            <div class="profile-overview center">
+                <div class="grid-three-columns">
+                    <div>Goals<br><?php print $player['goals']; ?></div>
+                    <div>GD<br><?php print $player['gd']; ?></div>
+                    <div>Matches<br><?php print $player['appearances']; ?></div>
+                </div>
+                <div class="grid-three-columns">
+                    <div>Win<br><?php print $player['wins']; ?></div>
+                    <div>Point<br><?php print $player['total_points']; ?></div>
+                    <div>Rating<br><?php print number_format($player['rating'], 2); ?></div>
+                </div>
+            </div>
+    </div>
+</div> */
+ .player-card-2 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.player-card-2 img {
+    transition: all 0.15s linear;
+    height: 100%;
+}
+
+.player-card-2 .player-card-2-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 20px;
+    background: linear-gradient(140deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0) 50%);
+    transition: all 0.15s linear;
+}
+
+
+
+.player-card-2 .player-card-2-overview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
+    color: #FFF;
+    padding: 50px 0px 20px 0px;
+    transition: all 0.15s linear;
+}
+
+.player-card-2 .player-card-2-overview h3 {
+    font-weight: bold;
+}
+
+.player-card-2 .player-card-2-overview p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.player-card-2:hover img {
+    filter: brightness(80%);
+}
+
+.player-card-2hover .player-card-2-name {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+.player-card-2:hover .player-card-2-overview {
+    padding-bottom: 25px;
+}

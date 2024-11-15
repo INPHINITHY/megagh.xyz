@@ -100,6 +100,9 @@ echo "<h2 class='center'>Division Rankings</h2>";
 				echo "<h2>Team '{$team}' not found.</h2>";
 			}
 		?>
+		<?php
+		
+		?>
     </div>
 		<div class="grid-four-columns">
 			<div class="linear-card mamba">
