@@ -4,9 +4,6 @@
 <?php include('includes/links.php'); ?>
 <title>WELCOME </title> 
 </head>
-<style>
-	
-</style>
 <body class="body-light">
     <header class="header">
         	<?php include('includes/nav.php'); ?>
