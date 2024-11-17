@@ -69,15 +69,15 @@
 				<img class="card-img" src="./../assets/images/photo_2023-11-17_15-13-40.jpg" alt="">
 			</div>
 			<div>
-				<h2>TREASURER</h2>
+				<h2></h2>
 				<ul>
 				<li class="list-horizontal">
-					<strong>MRED_DY</strong>
-					<p><strong>Club</strong>-Immortal Souls</p>
+					<strong>WISDOM DRAX</strong>
+					<p><strong>Club</strong>-Les Addicts Du Pes</p>
 					<ul>
 						<li><a href="mailto:" title="personal-email"><i class="bi bi-envelope-at-fill"></i></a></li>
 						<li><a href="" title="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="https://wa.me/+233544084509" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
+						<li><a href="https://wa.me/+24107628633" title="whatsapp"><i class="bi bi-whatsapp"></i></a></li>
 					</ul>
 				</li>
 				</ul>

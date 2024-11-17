@@ -1,0 +1,15 @@
+{
+    "William": {
+        "password": "$2y$10$FFoIfT9ksDN2eFoIyzFbEuXFJLZaYF.rcY\/HDZytFkMGdu.zoBo06",
+        "login_history": []
+    },
+    "Aizen": {
+        "password": "$2y$10$aHc4ejDJm2FYMpXaysUADeXKina.4DpG.hrJEpR6GdX.QaneugErG",
+        "login_history": []
+    },
+    "Inphinithy": {
+        "password": "$2y$10$dZaXqUFgzngaF4xL5vi9b.MU8\/YAd1qmrKf7oOLY6M5s.BXrG6Q7i",
+        "login_history": [
+        ]
+    }
+}

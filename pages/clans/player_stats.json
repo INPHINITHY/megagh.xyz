@@ -1,7 +1,6 @@
 {
   "teams": {
     "eFootball Giants": {
-      "short-hand":["GNT"],
       "players": [
         {
           "player_name": "Inphinithy",
@@ -211,7 +210,6 @@
       ]
     },
     "Les Addicts Du Pes": {
-      "short-hand":["LPS"],
       "players": [
         {
           "player_name": "Elmer",
@@ -417,7 +415,6 @@
       ]
     },
     "Black Mamba": {
-      "short-hand":["BM"],
       "players": [
         {
           "player_name": "Mr Nobody",
@@ -604,7 +601,6 @@
       ]
     },
     "Elite Pro Gamers": {
-      "short-hand":["EPG"],
       "players": [
         {
           "player_name": "Legacy",
@@ -804,7 +800,6 @@
       ]
     },
     "eSports PANDA": {
-      "short-hand":["eP"],
       "players": [
         {
           "player_name": "Faabulous",
@@ -1004,7 +999,6 @@
       ]
     },
     "Immortal Souls of eSports": {
-      "short-hand":["IMS"],
       "players": [
         {
           "player_name": "Mr_Scout",
@@ -1204,7 +1198,6 @@
       ]
     },
     "Legendary Gamers Clan": {
-      "short-hand":["LGC"],
       "players": [
         {
           "player_name": "6TeeN",
@@ -1391,7 +1384,6 @@
       ]
     },
     "Les Panthers": {
-      "short-hand":["LPS"],
       "players": [
         {
           "player_name": "Ibley",
@@ -1591,7 +1583,6 @@
       ]
     },
     "Majestic Wiz": {
-      "short-hand":["WIZ"],
       "players": [
         {
           "player_name": "",
@@ -1791,7 +1782,6 @@
       ]
     },
     "MEC Galaxy Boys": {
-      "short-hand":["MGB"],
       "players": [
         {
           "player_name": "John Amoah",
@@ -1991,7 +1981,6 @@
       ]
     },
     "Militant Boyz Clan": {
-      "short-hand":["MBC"],
       "players": [
         {
           "player_name": "Swirk",
@@ -2191,7 +2180,6 @@
       ]
     },
     "Ninja Bros": {
-      "short-hand":["NB"],
       "players": [
         {
           "player_name": "Deen",
@@ -2365,7 +2353,6 @@
       ]
     },
     "Nocturnal Terror Tribe": {
-      "short-hand":["NTT"],
       "players": [
         {
           "player_name": "Modest Raven",
@@ -2565,7 +2552,6 @@
       ]
     },
     "Sports Boys Arena": {
-      "short-hand":["SBA"],
       "players": [
         {
           "player_name": "Carlton",
@@ -2765,7 +2751,6 @@
       ]
     },
     "Vawulence Evolution": {
-      "short-hand":["VEc"],
       "players": [
         {
           "player_name": "Peculiar",
@@ -2965,7 +2950,6 @@
       ]
     },
     "Wild Hunters": {
-      "short-hand":["WH"],
       "players": [
         {
           "player_name": "Emma",
@@ -3165,7 +3149,6 @@
       ]
     },
     "Incredible Bullion Boys": {
-      "short-hand":["IBB"],
       "players": [
         {
           "player_name": "",

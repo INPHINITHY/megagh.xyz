@@ -297,7 +297,7 @@
 
   
 
-@media only screen and (max-width:720px){
+@media only screen and (max-width:850px){
 	.linear-card{
 		background-color: #ffffff;
 		margin: 0 ;
@@ -408,7 +408,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     color: #FFF;
     padding: 15px 20px;
@@ -447,4 +447,47 @@
 }
 .player-card-2:hover .player-card-2-overview {
     padding-bottom: 25px;
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Take up available space between nav and footer */
+}
+.btn {
+  padding: 8px 20px;
+  border-radius: 0;
+  overflow: hidden;
+}
+.form-input-material {
+  --input-default-border-color: white;
+  --input-border-bottom-color: white;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+              0 1px 1px rgba(128, 128, 128, 0.155),
+              0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+              0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+              0 12px 12px rgba(128, 128, 128, 0.35);
+  margin: 25px;
+}
+.login-form h1 {
+  margin: 0 0 24px 0;
+}
+.form-input-material {
+  margin: 12px 0;
+  width: 100%;
+}
+.btn {
+  width: 100%;
+  margin: 18px 0 9px 0;
 }

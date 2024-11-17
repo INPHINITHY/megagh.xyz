@@ -120,7 +120,7 @@
             $player['rating'] = $player['rating'] ?? 0;
         ?>
     <div class="player-card-2"> 
-        <img class="img" src="/assets/images/players/les_addicts_du_pes/<?php print $player['img']; ?>.jpg" alt="<?php print $player['player_name']; ?>"/>
+        <img class="img" src="/assets/images/players/MEC_galaxy_boys/<?php print $player['img']; ?>.jpg" alt="<?php print $player['player_name']; ?>"/>
         <div class="player-card-2-name">
             <h2><?php print $player['player_name']; ?></h2>
         </div>
