@@ -71,7 +71,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
             </div>
             <div class="grid-three-columns" style = "place-items:center">
                 <div>
-                    <a class="btn btn-primary" href="/pages/record-management/clubScoreLogic.php" role="button">Club Scores</a>
+                    <a class="btn btn-primary" href="/pages/record-management/clubScoreForm.php" role="button">Club Scores</a>
                 </div>
                 <div>
                     <a class="btn btn-primary" href="/pages/record-management/playerScoresForm.php" role="button">Player Scores</a>
