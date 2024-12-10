@@ -37,7 +37,7 @@ echo "<h2 class='center'>Division Rankings</h2>";
                         <th>Rank</th>
                         <th style='text-align:left'>Player</th>
                         <th>GD</th>
-                        <th>MP</th>
+                        <th class='hide'>MP</th>
                         <th>W</th>
 						<th>P</th>
 						<th>Rate</th>
